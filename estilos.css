@@ -429,9 +429,19 @@ ul.buttonsAnimaciones li a .tab-text{
 	}
 }
 
+/* ESTILOS DE LOS H4 PC - RESPONSIVO*/
+
 h4{
 	font-size: 16px;
 }
+
+@media screen and (max-width: 800px){
+	h4{
+		font-size: 12px;
+	}
+}
+
+/* ESTILOS DE IMAGENES GIF ANIMACIONES---------------*/
 
 .secciones article img{
 	max-width: 84%;
