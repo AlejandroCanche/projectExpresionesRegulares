@@ -1,0 +1,441 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #D4D4D4;
+	font-family: 'Open sans';
+	background-color: rgb(21,23,44);
+}
+
+/* ESTILOS DEL ENCABEZADO MENU Y SECCIONES --------------------------*/
+
+.contenedor{
+	width: 790px;
+	max-width: 90%;
+	margin: 30px auto;
+	background: url(img/fondoSeccion.png);
+}
+
+ul.tabs{
+	width: 100%;
+	background: rgb(0,16,42);
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+ul.tabs li{
+	width: 18%;
+}
+
+ul.tabs li a{
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	transition: color, background-color, 0.5s;
+	color: white; 
+	background-color: #00102A;
+
+	display: block;
+	padding: 20px 0px;
+}
+
+ul.tabs li a:hover{
+	color: black;
+	background-color: #C79316;
+	transition: all 600ms;
+	cursor:pointer;
+}
+
+.active{
+	background: #C79316;
+}
+
+ul.tabs li a .tab-text{
+	margin-left: 8px;
+}
+
+.secciones{
+	width: 100%;
+	height: 80vh;
+}
+
+.secciones article{
+	padding: 30px
+}
+
+.secciones article p{
+	padding: 20px;
+	text-align: justify;
+	padding-right: 90px;
+	padding-left: 90px;
+}
+
+.secciones article h1{
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+/* ESTILOS DEL ENCABEZADO Y SECCIONES RESPONSIVO ---------------*/
+@media screen and (max-width: 800px){
+
+	ul.tabs li{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+
+	ul.tabs li a{
+		font-size: 13px;
+	}
+	.contenedor{
+		background-size: contain;
+		width: 500px;
+		height: 400px;
+		background-repeat: no-repeat;
+	}
+
+	.secciones article p{
+		padding: 10px;
+		text-align: justify;
+		padding-right: 50px;
+		padding-left: 50px;
+		font-size: 12px;
+	}
+
+	.secciones article h1{
+		padding-top: 1px;
+		text-align: center;
+		font-size: 15px;
+	}
+}
+
+/* ESTILOS DEL ENCABEZADO Y SECCIONES EN PANTALLA VERTICAL CELULAR ---------------*/
+.contenedorVertical{
+	display: none;
+}
+
+@media all and (orientation: portrait){
+	.contenedor{
+		display: none;
+	}
+	.contenedorVertical{
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		z-index: 1;
+		background: url(img/Fondo.png);
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+/* ESTILOS DE LOS BUTTONS MENU  --------------------------*/
+
+ul.buttons{
+	width: 60%;
+	list-style: none;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.buttons li{
+    margin:9px;
+}
+
+ul.buttons li a{
+
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	transition: color, background-color, 0.5s;
+	color: white; 
+	background-color: #00102A;
+
+	display: block;
+	padding: 20px 0px;
+	border-radius: 10px;
+}
+
+ul.buttons li a:hover{
+	color: black;
+	background-color: #C79316;
+	transition: all 600ms;
+	cursor:pointer;
+}
+
+ul.buttons li a .tab-text{
+	margin-left: 8px;
+}
+
+/* ESTILOS DEL BUTTONS MENU EN PANTALLA RESPONSIVO ---------------*/
+
+@media screen and (max-width: 800px){
+	ul.buttons{
+		width: 50%;
+	}
+
+	ul.buttons li{
+    	margin: 4px;
+	}
+
+	ul.buttons li a{
+		font-size: 12px;
+		padding: 10px 0px;
+	}
+}
+
+
+/* ESTILOS DEL BUTTONS MENU - TEORIA ---------------*/
+
+ul.buttonsTeoria{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+ul.buttonsTeoria li{
+	width: 22%;
+	float:left;
+    margin:0px 10px;
+}
+
+ul.buttonsTeoria li a{
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	transition: color, background-color, 0.5s;
+	color: white; 
+	background-color: #00102A;
+
+	display: block;
+	padding: 20px 8px;
+	border-radius: 10px;
+}
+
+ul.buttonsTeoria li a:hover{
+	color: black;
+	background-color: #C79316;
+	transition: all 600ms;
+	cursor:pointer;
+}
+
+ul.buttonsTeoria li a .tab-text{
+	margin-left: 8px;
+}
+
+
+
+/* ESTILOS DEL BUTTONS MENU - TEORIA HORIZONTAL RESPONSIVO ---------------*/
+@media screen and (max-width: 800px){
+	ul.buttonsTeoria li{
+		width: 25%;
+		float:left;
+	    margin:0px 3px;
+	}
+
+	ul.buttonsTeoria li a{
+		font-size: 12px;
+		padding: 8px 8px;
+	}
+	
+	ul.buttonsTeoria li a .tab-text{
+		margin-left: 10px;
+	}
+}
+
+/* ESTILOS DEL BUTTONS REGRESAR ---------------*/
+
+ul.buttonsRegresar{
+	width: 20%;
+	list-style: none;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.buttonsRegresar li{
+    margin:9px;
+}
+
+ul.buttonsRegresar li a{
+
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	transition: color, background-color, 0.5s;
+	color: white; 
+	background-color: #00102A;
+
+	display: block;
+	padding: 10px 0px;
+	border-radius: 10px;
+}
+
+ul.buttonsRegresar li a:hover{
+	color: black;
+	background-color: #C79316;
+	transition: all 600ms;
+	cursor:pointer;
+}
+	
+ul.buttonsRegresar li a .tab-text{
+	margin-left: 10px;
+}
+
+/* ESTILOS DEL BUTTONS REGRESAR RESPONSIVO ---------------*/
+
+@media screen and (max-width: 800px){
+	ul.buttonsRegresar{
+		width: 20%;
+	}
+
+	ul.buttonsRegresar li{
+    	margin: 4px;
+	}
+
+	ul.buttonsRegresar li a{
+		font-size: 12px;
+		padding: 5px 0px;
+	}
+}
+
+/* ESTILOS DEL BUTTONS MENU - TEORIA - OPERACIONES ---------------*/
+
+ul.buttonsOER{
+	width: 60%;
+	list-style: none;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.buttonsOER li{
+    margin:9px;
+}
+
+ul.buttonsOER li a{
+
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	transition: color, background-color, 0.5s;
+	color: white; 
+	background-color: #00102A;
+
+	display: block;
+	padding: 10px 0px;
+	border-radius: 10px;
+}
+
+ul.buttonsOER li a:hover{
+	color: black;
+	background-color: #C79316;
+	transition: all 600ms;
+	cursor:pointer;
+}
+
+ul.buttonsOER li a .tab-text{
+	margin-left: 8px;
+}
+
+
+/* ESTILOS DEL BUTTONS MENU - TEORIA - OPERACIONES RESPONSIVO---------------*/
+
+@media screen and (max-width: 800px){
+	ul.buttonsOER{
+		width: 50%;
+	}
+
+	ul.buttonsOER li{
+    	margin: 4px;
+	}
+
+	ul.buttonsOER li a{
+		font-size: 12px;
+		padding: 5px 0px;
+	}
+}
+
+
+/* ESTILOS DEL BUTTONS MENU - TEORIA - OPERACIONES ANIMACIONES---------------*/
+
+ul.buttonsAnimaciones{
+	width: 30%;
+	list-style: none;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.buttonsAnimaciones li{
+    margin:9px;
+}
+
+ul.buttonsAnimaciones li a{
+
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	transition: color, background-color, 0.5s;
+	color: white; 
+	background-color: #00102A;
+
+	display: block;
+	padding: 10px 0px;
+	border-radius: 10px;
+}
+
+ul.buttonsAnimaciones li a:hover{
+	color: black;
+	background-color: #C79316;
+	transition: all 600ms;
+	cursor:pointer;
+}
+	
+ul.buttonsAnimaciones li a .tab-text{
+	margin-left: 10px;
+}
+
+/* ESTILOS DEL BUTTONS MENU - TEORIA - OPERACIONES ANIMACIONES RESPONSIVO---------------*/
+
+@media screen and (max-width: 800px){
+	ul.buttonsAnimaciones{
+		width: 30%;
+	}
+
+	ul.buttonsAnimaciones li{
+    	margin: 4px;
+	}
+
+	ul.buttonsAnimaciones li a{
+		font-size: 12px;
+		padding: 5px 0px;
+	}
+}
+
+h4{
+	font-size: 12px;
+}
+
+.secciones article img{
+	max-width: 84%;
+	justify-content: center;
+	display:block;
+	margin:auto;
+}

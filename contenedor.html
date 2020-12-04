@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Expresiones Regulares</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="font-awesome.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/secondMain.js"></script>
+	<script src="js/thirdMain.js"></script>
+	<script src="js/regresar.js"></script>
+	<script src="js/operacionesMain.js"></script>
+	<script src="js/animaciones.js"></script>
+</head>
+
+<!-- EMPIEZA EL CUERPO DE MI PAGINA--------------------------------------------------- -->
+
+<body>
+
+	<div class="contenedorVertical"></div>
+
+	<!-- CREO UN CONTENEDOR------------------------------------------------------ -->	
+
+	<div class="contenedor">
+		<audio id="demo" src="audio/sonido.wav"></audio>
+		
+		<!-- CREO TAB DE NAVEGACIÓN PRINCIPAL----------------------------------------- -->	
+		<ul class="tabs">		
+			<li><a onclick="document.getElementById('demo').play()" href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Inicio</span></a></li>
+			<li><a onclick="document.getElementById('demo').play()" href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Menu</span></a></li>
+			<li><a onclick="document.getElementById('demo').play()" href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Creditos</span></a></li>
+			<li><a onclick="document.getElementById('demo').play()" href="#tab4"><span class="fa fa-bookmark"></span><span class="tab-text">Opciones</span></a></li>
+		</ul>
+
+		<!-- EMPIEZA TODAS MIS SECCIONES------------------------------------------------------ -->
+
+		<div class="secciones">
+
+			<!-- SECCION INICIO------------------------------------------------ -->
+			<article id="tab1">
+				<h1>Inicio</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis id ratione culpa dolorum! Nemo, animi? Eveniet eaque perspiciatis, libero quia, pariatur iusto, ipsum porro quod, ut tempora cum quo non illum. Non eligendi incidunt sequi, molestias quia perspiciatis architecto repudiandae quod.</p>
+			</article>
+
+			<!-- SECCION MENU------------------------------------------------- -->
+			<article id="tab2">
+				<!-- CREO TAB DE NAVEGACIÓN MENU----------------------------------------- -->
+				<br>
+				<ul class="buttons">
+					<li><a href="#button1"><span class="fa fa-home"></span><span class="tab-text">Teoría</span></a></li>
+					<li><a href="#button2"><span class="fa fa-group"></span><span class="tab-text">Ejemplos</span></a></li>
+					<li><a href="#button3"><span class="fa fa-briefcase"></span><span class="tab-text">Actividades</span></a></li>
+					<li><a href="#button4"><span class="fa fa-bookmark"></span><span class="tab-text">Evaluación</span></a></li>
+				</ul>
+			</article>
+
+			<!-- SECCION CREDITOS----------------------------------------------- -->
+			<article id="tab3">
+				<h1>Creditos</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis id ratione culpa dolorum! Nemo, animi?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dignissimos at esse, ipsum rerum assumenda nisi obcaecati! Aliquam iure voluptatem incidunt, explicabo sit labore, perferendis eius ad vel quia. Praesentium, doloribus. Quisquam provident nostrum totam itaque debitis, minima, tempore dolores!</p>
+			</article>
+
+			<!-- SECCION OPCIONES------------------------------------------------- -->
+			<article id="tab4">
+				<h1>Musica</h1>
+				<center><audio src="audio/musicaFondo.mp3" controls autoplay type="audio/mpeg" loop="true"></audio></center>
+			</article>
+
+			<!-- COMIENZA SECCIONES TAB DE NAVEGACIÓN DE MENU----------------------------------------- -->
+			
+			<!-- SECCION TEORIA----------------------------------------- -->
+			<article id="button1">
+				<h1>Introducción</h1>
+				<p>Una ER (Expresion Regular) es una abreviatura que representa a todas las
+				   palabras que forman parte de un lenguaje regular.</p>
+
+				<p>A partir de una ER se pueden obtener todas las 
+				   palabras aceptadas por el lenguaje regular correspondiente.</p>
+
+				<br>
+				<!-- CREO TAB DE NAVEGACIÓN MENU 2----------------------------------------- -->
+				<ul class="buttonsTeoria">
+					<li><a href="#buttonT1"><span class="fa fa-home"></span><span class="tab-text">Operaciones con las ER</span></a></li>
+					<li><a href="#buttonT2"><span class="fa fa-group"></span><span class="tab-text">Precedencia de los Operadores</span></a></li>
+					<li><a href="#buttonT3"><span class="fa fa-briefcase"></span><span class="tab-text">Condiciones para construir ER</span></a></li>
+				</ul>
+
+			</article>
+
+			<!-- SECCION EJEMPLOS----------------------------------------- -->
+			<article id="button2">
+				<h1>EJEMPLOS</h1>
+			</article>
+
+			<!-- SECCION ACTIVIDADES----------------------------------------- -->
+			<article id="button3">
+				<h1>ACTIVIDADES</h1>
+			</article>
+
+			<!-- SECCION EVALUACION----------------------------------------- -->
+			<article id="button4">
+				<h1>EVALUACIÓn</h1>
+			</article>
+
+			<!-- COMIENZA SECCIONES TAB DE NAVEGACIÓN DE MENU-TEORIA-------------------------------- -->
+
+			<!-- SECCION OPERACIONES CON ER----------------------------------------- -->
+			<article id="buttonT1">
+				<h1>Operaciones con ER</h1>
+				<p>Las operaciones definidas para las ER son:</p>
+
+				<ul class="buttonsOER">
+					<li><a href="#buttonO1"><span class="fa fa-home"></span><span class="tab-text">Unión</span></a></li>
+					<li><a href="#buttonO2"><span class="fa fa-group"></span><span class="tab-text">Concatenación</span></a></li>
+					<li><a href="#buttonO3"><span class="fa fa-briefcase"></span><span class="tab-text">Cierre de estrella</span></a></li>
+				</ul>
+				<br>
+				<ul class="buttonsRegresar">
+					<li><a href="#button1"><span class="fa fa-home"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
+			<!-- SECCION PRECEDENCIA DE OPERADORES----------------------------------------- -->
+			<article id="buttonT2">
+				<h1>Precedencia de operadores</h1>
+				<p>
+					Se usan paréntesis para indicar la precedencia de las 
+					operaciones, hay que tener en cuenta el siguiente 
+					orden de precedencia :
+				</p>
+				<p>
+					1ª.- Uso de paréntesis
+					<br>
+					2ª.- Operación cierre y cierre positivo
+					<br>
+					3ª.- Operación concatenación
+					<br>
+					4ª.- Unión 
+				</p>
+
+				<ul class="buttonsRegresar">
+					<li><a href="#button1"><span class="fa fa-home"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
+			<!-- SECCION CONDICIONES----------------------------------------- -->
+			<article id="buttonT3">
+				<h1>Condiciones</h1>
+
+				<p>
+					Completez: La ER debe aceptar a TODAS las palabras que
+					forman parte del lenguaje regular
+				</p>
+
+				<p>
+					Corrección: Las ER debe rechazar a TODA palabra que NO
+					forme parte del lenguaje regular.
+				</p>
+
+				<ul class="buttonsRegresar">
+					<li><a href="#button1"><span class="fa fa-home"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
+			<!-- COMIENZA SECCIONES TAB DE NAVEGACIÓN DE MENU - TEORIA - OPERACIONES------------ -->
+			
+			<!-- SECCION UNIÓN----------------------------------------- -->
+			<article id="buttonO1">
+				<h1>Unión  (α + β)</h1>
+
+				<p>
+					Si α y β  son dos expresiones regulares, α + β denota la unión de ellas,
+					que se lee como α ó β. Es decir, dos posibles caminos a elegir: 
+					se toma uno o bien, se toma el otro.
+				</p>
+				<h4 align="center">
+					α + β --> el símbolo + indica 2 caminos <br>
+					O tomo el α, o bien, tomo el β. <br>
+					Sólo 1 a la vez.
+				</h4>
+				<br>
+				<ul class="buttonsAnimaciones">
+					<li><a href="#animacionUnion"><span class="fa fa-home"></span><span class="tab-text">Ver animación</span></a></li>
+				</ul>
+				<ul class="buttonsRegresar">
+					<li><a href="#buttonT1"><span class="fa fa-home"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
+			<!-- SECCION CONCATENACIÓN----------------------------------------- -->
+			<article id="buttonO2">
+				<h1>Concatenación (αβ)</h1>
+				<p>
+					Si α y β son expresiones regulares, αβ denota la concatenación
+					de ellas, es decir, representa escribir una seguida de la otra
+				</p>
+				<h4 align="center">
+					{α β} = {α} {β}= {α } . {β}
+				</h4>
+				<br>
+				<ul class="buttonsAnimaciones">
+					<li><a href="#animacionConca"><span class="fa fa-home"></span><span class="tab-text">Ver animación</span></a></li>
+				</ul>
+				<ul class="buttonsRegresar">
+					<li><a href="#buttonT1"><span class="fa fa-home"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
+			<!-- SECCION CIERRE DE ESTRELLA----------------------------------------- -->
+			<article id="buttonO3">
+				<h1>Cierre de estrella (α*)</h1>
+				<p>
+					La expresión α* equivale a un ciclo en la expresion α, significa que se 
+					puede tomar repetidas veces la expresión, generando así las palabras:
+				</p>
+				<h4 align="center">
+					α*={ λ, α, αα, ααα, αααα, ...}
+				</h4>
+				<br>
+				<ul class="buttonsAnimaciones">
+					<li><a href="#animacionCierre"><span class="fa fa-home"></span><span class="tab-text">Ver animación</span></a></li>
+				</ul>
+				<ul class="buttonsRegresar">
+					<li><a href="#buttonT1"><span class="fa fa-home"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
+			<!-- INICIA SECCIONES DE ANIMACIONES DE OPERACIONES-------------------------------------- -->
+
+			<article id="animacionUnion">
+				<img src="img/union.gif">
+			</article>
+
+			<article id="animacionConca">
+				
+			</article>
+
+			<article id="animacionCierre">
+				<img src="img/cierreEstrella.gif">
+			</article>
+
+		</div>
+	</div>
+</body>
+</html>
