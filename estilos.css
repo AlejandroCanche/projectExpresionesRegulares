@@ -10,6 +10,7 @@ body{
 	background: #D4D4D4;
 	font-family: 'Open sans';
 	background-color: rgb(21,23,44);
+	max-width: 100%;
 }
 
 /* ESTILOS DEL ENCABEZADO MENU Y SECCIONES --------------------------*/
