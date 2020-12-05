@@ -20,6 +20,7 @@ body{
 	max-width: 90%;
 	margin: 30px auto;
 	background: url(img/fondoSeccion.png);
+	background-repeat: no-repeat;
 }
 
 ul.tabs{
