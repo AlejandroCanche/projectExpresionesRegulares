@@ -12,7 +12,8 @@ header {
 }
 
 header .textos {
-    margin-top: 152px;
+    margin-top: 150px;
+    background-color: rgb(0,0,0,0.3);
 }
 
 header .titulo {
