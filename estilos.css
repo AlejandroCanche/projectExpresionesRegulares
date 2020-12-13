@@ -377,19 +377,19 @@ ul.buttonsOER li a .tab-text{
 /* ESTILOS DEL BUTTONS MENU - TEORIA - OPERACIONES ANIMACIONES---------------*/
 
 ul.buttonsAnimaciones{
-	width: 30%;
+	width: 100%;
 	list-style: none;
+	display: flex;
 	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 ul.buttonsAnimaciones li{
-    margin:9px;
+	width: 22%;
+	float:left;
+    margin:0px 5px;
 }
 
 ul.buttonsAnimaciones li a{
-
 	text-decoration: none;
 	font-size: 16px;
 	text-align: center;
@@ -399,7 +399,7 @@ ul.buttonsAnimaciones li a{
 	background-color: #00102A;
 
 	display: block;
-	padding: 10px 0px;
+	padding: 10px 4px;
 	border-radius: 10px;
 }
 
@@ -409,25 +409,27 @@ ul.buttonsAnimaciones li a:hover{
 	transition: all 600ms;
 	cursor:pointer;
 }
-	
+
 ul.buttonsAnimaciones li a .tab-text{
-	margin-left: 10px;
+	margin-left: 8px;
 }
 
 /* ESTILOS DEL BUTTONS MENU - TEORIA - OPERACIONES ANIMACIONES RESPONSIVO---------------*/
 
 @media screen and (max-width: 800px){
-	ul.buttonsAnimaciones{
-		width: 30%;
-	}
-
 	ul.buttonsAnimaciones li{
-    	margin: 4px;
+		width: 30%;
+		float:left;
+	    margin:0px 3px;
 	}
 
 	ul.buttonsAnimaciones li a{
 		font-size: 12px;
-		padding: 5px 0px;
+		padding: 6px 3px;
+	}
+	
+	ul.buttonsAnimaciones li a .tab-text{
+		margin-left: 10px;
 	}
 }
 
@@ -450,4 +452,8 @@ h4{
 	justify-content: center;
 	display:block;
 	margin:auto;
+}
+
+#autores{
+	text-align: center;
 }

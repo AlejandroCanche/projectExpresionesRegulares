@@ -31,8 +31,8 @@
 		<!-- CREO TAB DE NAVEGACIÓN PRINCIPAL----------------------------------------- -->	
 		<ul class="tabs">		
 			<li><a onclick="document.getElementById('demo').play()" href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Inicio</span></a></li>
-			<li><a onclick="document.getElementById('demo').play()" href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Menu</span></a></li>
-			<li><a onclick="document.getElementById('demo').play()" href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Creditos</span></a></li>
+			<li><a onclick="document.getElementById('demo').play()" href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Menú</span></a></li>
+			<li><a onclick="document.getElementById('demo').play()" href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Créditos</span></a></li>
 			<li><a onclick="document.getElementById('demo').play()" href="#tab4"><span class="fa fa-bookmark"></span><span class="tab-text">Opciones</span></a></li>
 		</ul>
 
@@ -42,8 +42,10 @@
 
 			<!-- SECCION INICIO------------------------------------------------ -->
 			<article id="tab1">
-				<h1>Inicio</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis id ratione culpa dolorum! Nemo, animi? Eveniet eaque perspiciatis, libero quia, pariatur iusto, ipsum porro quod, ut tempora cum quo non illum. Non eligendi incidunt sequi, molestias quia perspiciatis architecto repudiandae quod.</p>
+				<h1>Estimado(a) alumno(a):​</h1>
+				<p>Tomando en cuenta que te adentrarás en el estudio del tema “Expresiones Regulares”, te presentamos esta aplicación, la cual, te será de utilidad para tener una mejor comprensión de dicha temática. También, deseamos que ésta te ofrezca una experiencia interesante, dinámica e interactiva de aprendizaje.</p>
+				<p>Asimismo, esperamos que la aplicación mencionada sea de tu agrado y que la información que brinda, así como la forma en el que ésta se presenta, facilite tu aprendizaje acerca de este tópico.​</p>
+				<h4 align="center">¡Bienvenido!</h4>
 			</article>
 
 			<!-- SECCION MENU------------------------------------------------- -->
@@ -60,14 +62,18 @@
 
 			<!-- SECCION CREDITOS----------------------------------------------- -->
 			<article id="tab3">
-				<h1>Creditos</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis id ratione culpa dolorum! Nemo, animi?</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dignissimos at esse, ipsum rerum assumenda nisi obcaecati! Aliquam iure voluptatem incidunt, explicabo sit labore, perferendis eius ad vel quia. Praesentium, doloribus. Quisquam provident nostrum totam itaque debitis, minima, tempore dolores!</p>
+				<h1>Créditos</h1>
+				<br>
+				<h4 align="center">Elaborado por:</h4>
+				<p id="autores">Br. Alejandro Emmanuel Canche Kú</p>
+				<p id="autores">Br. Alejandro Emmanuel Canche Kú</p>
+				<h4 align="center">En coordinación:</h4>
+				<p id="autores">MC. Cinthia Maribel González Segura</p>
 			</article>
 
 			<!-- SECCION OPCIONES------------------------------------------------- -->
 			<article id="tab4">
-				<h1>Musica</h1>
+				<h1>Música</h1>
 				<center><audio src="audio/musicaFondo.mp3" controls autoplay type="audio/mpeg" loop="true"></audio></center>
 			</article>
 
@@ -185,7 +191,8 @@
 				</h4>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a href="#animacionUnion"><span class="fa fa-home"></span><span class="tab-text">Ver animación</span></a></li>
+					<li><a href="#animacionUnion1"><span class="fa fa-home"></span><span class="tab-text">Ver animación 1</span></a></li>
+					<li><a href="#animacionUnion2"><span class="fa fa-home"></span><span class="tab-text">Ver animación 2</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a href="#buttonT1"><span class="fa fa-home"></span><span class="tab-text">Regresar</span></a></li>
@@ -204,7 +211,7 @@
 				</h4>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a href="#animacionConca"><span class="fa fa-home"></span><span class="tab-text">Ver animación</span></a></li>
+					<li><a href="#animacionConcatenacion"><span class="fa fa-home"></span><span class="tab-text">Ver animación</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a href="#buttonT1"><span class="fa fa-home"></span><span class="tab-text">Regresar</span></a></li>
@@ -232,16 +239,20 @@
 
 			<!-- INICIA SECCIONES DE ANIMACIONES DE OPERACIONES-------------------------------------- -->
 
-			<article id="animacionUnion">
-				<img src="img/union.gif">
+			<article id="animacionUnion1">
+				<img src="img/animacionUnion1.gif">
 			</article>
 
-			<article id="animacionConca">
-				
+			<article id="animacionUnion2">
+				<img src="img/animacionUnion2.gif">
+			</article>
+
+			<article id="animacionConcatenacion">
+				<img src="img/animacionConcatenacion.gif">
 			</article>
 
 			<article id="animacionCierre">
-				<img src="img/cierreEstrella.gif">
+				<img src="img/animacionCierreEstrella.gif">
 			</article>
 
 		</div>
