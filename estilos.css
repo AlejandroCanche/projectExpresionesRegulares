@@ -21,6 +21,7 @@ body{
 	margin: 30px auto;
 	background: url(img/fondoSeccion.png);
 	background-repeat: no-repeat;
+	font-family: 'Open sans';
 }
 
 ul.tabs{
@@ -69,7 +70,8 @@ ul.tabs li a .tab-text{
 }
 
 .secciones article{
-	padding: 30px
+	padding: 30px;
+	font-family: 'Open sans';
 }
 
 .secciones article p{
@@ -172,8 +174,9 @@ ul.buttons li a{
 ul.buttons li a:hover{
 	color: black;
 	background-color: #C79316;
-	transition: all 600ms;
+	transition: all 200ms;
 	cursor:pointer;
+	box-shadow: 1px 1px 20px 0px #00102A;
 }
 
 ul.buttons li a .tab-text{
@@ -230,8 +233,9 @@ ul.buttonsTeoria li a{
 ul.buttonsTeoria li a:hover{
 	color: black;
 	background-color: #C79316;
-	transition: all 600ms;
+	transition: all 200ms;
 	cursor:pointer;
+	box-shadow: 1px 1px 20px 0px #00102A;
 }
 
 ul.buttonsTeoria li a .tab-text{
@@ -289,9 +293,10 @@ ul.buttonsRegresar li a{
 
 ul.buttonsRegresar li a:hover{
 	color: black;
-	background-color: #C79316;
+	background-color: rgb(4,150,213);
 	transition: all 600ms;
 	cursor:pointer;
+	box-shadow: 1px 1px 20px 0px #00102A;
 }
 	
 ul.buttonsRegresar li a .tab-text{
@@ -347,8 +352,9 @@ ul.buttonsOER li a{
 ul.buttonsOER li a:hover{
 	color: black;
 	background-color: #C79316;
-	transition: all 600ms;
+	transition: all 200ms;
 	cursor:pointer;
+	box-shadow: 1px 1px 20px 0px #00102A;
 }
 
 ul.buttonsOER li a .tab-text{

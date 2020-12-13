@@ -36,6 +36,7 @@ header .boton {
     text-align: center;
     text-decoration: none;
     border-radius: 16px;
+    font-family: 'Open sans';
 }
 
 header .boton:hover{
@@ -43,6 +44,7 @@ header .boton:hover{
     background-color: #C79316;
     transition: all 600ms;
     cursor:pointer;
+    box-shadow: 1px 1px 15px 0px white;
 }
 
 @media screen and (max-width: 800px){
