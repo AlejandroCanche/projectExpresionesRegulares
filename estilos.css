@@ -293,7 +293,7 @@ ul.buttonsRegresar li a{
 
 ul.buttonsRegresar li a:hover{
 	color: black;
-	background-color: rgb(4,150,213);
+	background-color: #00FFFF;
 	transition: all 600ms;
 	cursor:pointer;
 	box-shadow: 1px 1px 20px 0px #00102A;

@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	$('ul.buttonsRegresar li a').click(function(){
 		$('ul.buttonsRegresar li a').removeClass('active');
-		$(this).addClass('active2');
+		$(this).addClass('active');
 		$('.secciones article').hide();
 
 		var activeButton = $(this).attr('href');
