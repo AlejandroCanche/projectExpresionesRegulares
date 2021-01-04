@@ -15,6 +15,7 @@
 	<script src="js/regresar.js"></script>
 	<script src="js/operacionesMain.js"></script>
 	<script src="js/animaciones.js"></script>
+	<script src="js/sonidoHoverMenu.js"></script>
 </head>
 
 <!-- EMPIEZA EL CUERPO DE MI PAGINA--------------------------------------------------- -->
@@ -26,14 +27,17 @@
 	<!-- CREO UN CONTENEDOR------------------------------------------------------ -->	
 
 	<div class="contenedor">
-		<audio id="demo" src="audio/sonido.wav"></audio>
+		<audio id="clicsTab" src="audio/sonido.wav"></audio>
+		<audio id="clicsMenu" src="audio/clicMenu.wav"></audio>
+		<audio id="clicsRegresar" src="audio/clicRegresar.wav"></audio>
+
 		
 		<!-- CREO TAB DE NAVEGACIÓN PRINCIPAL----------------------------------------- -->	
 		<ul class="tabs">		
-			<li><a onclick="document.getElementById('demo').play()" href="#tab1"><span class="fas fa-home"></span><span class="tab-text">Inicio</span></a></li>
-			<li><a onclick="document.getElementById('demo').play()" href="#tab2"><span class="fas fa-bars"></span><span class="tab-text">Menú</span></a></li>
-			<li><a onclick="document.getElementById('demo').play()" href="#tab3"><span class="fas fa-users"></span><span class="tab-text">Créditos</span></a></li>
-			<li><a onclick="document.getElementById('demo').play()" href="#tab4"><span class="fas fa-wrench"></span><span class="tab-text">Opciones</span></a></li>
+			<li><a onclick="document.getElementById('clicsTab').play()" href="#tab1"><span class="fas fa-home"></span><span class="tab-text">Inicio</span></a></li>
+			<li><a onclick="document.getElementById('clicsTab').play()" href="#tab2"><span class="fas fa-bars"></span><span class="tab-text">Menú</span></a></li>
+			<li><a onclick="document.getElementById('clicsTab').play()" href="#tab3"><span class="fas fa-users"></span><span class="tab-text">Créditos</span></a></li>
+			<li><a onclick="document.getElementById('clicsTab').play()" href="#tab4"><span class="fas fa-wrench"></span><span class="tab-text">Opciones</span></a></li>
 		</ul>
 
 		<!-- EMPIEZA TODAS MIS SECCIONES------------------------------------------------------ -->
@@ -53,10 +57,10 @@
 				<!-- CREO TAB DE NAVEGACIÓN MENU----------------------------------------- -->
 				<br>
 				<ul class="buttons">
-					<li><a href="#button1"><span class="fas fa-book"></span><span class="tab-text">Teoría</span></a></li>
-					<li><a href="#button2"><span class="fas fa-chalkboard"></span><span class="tab-text">Ejemplos</span></a></li>
-					<li><a href="#button3"><span class="fas fa-edit"></span><span class="tab-text">Actividades</span></a></li>
-					<li><a href="#button4"><span class="fas fa-clipboard"></span><span class="tab-text">Evaluación</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#button1"><span class="fas fa-book"></span><span class="tab-text">Teoría</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#button2"><span class="fas fa-chalkboard"></span><span class="tab-text">Ejemplos</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#button3"><span class="fas fa-edit"></span><span class="tab-text">Actividades</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#button4"><span class="fas fa-clipboard"></span><span class="tab-text">Evaluación</span></a></li>
 				</ul>
 			</article>
 
@@ -91,11 +95,10 @@
 				<br>
 				<!-- CREO TAB DE NAVEGACIÓN MENU 2----------------------------------------- -->
 				<ul class="buttonsTeoria">
-					<li><a href="#buttonT1"><span class="tab-text">Operaciones con las ER</span></a></li>
-					<li><a href="#buttonT2"><span class="tab-text">Precedencia de los Operadores</span></a></li>
-					<li><a href="#buttonT3"><span class="tab-text">Condiciones para construir ER</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#buttonT1"><span class="tab-text">Operaciones con las ER</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#buttonT2"><span class="tab-text">Precedencia de los Operadores</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#buttonT3"><span class="tab-text">Condiciones para construir ER</span></a></li>
 				</ul>
-
 			</article>
 
 			<!-- SECCION EJEMPLOS----------------------------------------- -->
@@ -121,13 +124,13 @@
 				<p>Las operaciones definidas para las ER son:</p>
 
 				<ul class="buttonsOER">
-					<li><a href="#buttonO1"><span class="tab-text">Unión</span></a></li>
-					<li><a href="#buttonO2"><span class="tab-text">Concatenación</span></a></li>
-					<li><a href="#buttonO3"><span class="tab-text">Cierre de estrella</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#buttonO1"><span class="tab-text">Unión</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#buttonO2"><span class="tab-text">Concatenación</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#buttonO3"><span class="tab-text">Cierre de estrella</span></a></li>
 				</ul>
 				<br>
 				<ul class="buttonsRegresar">
-					<li><a href="#button1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#button1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
@@ -150,7 +153,7 @@
 				</p>
 
 				<ul class="buttonsRegresar">
-					<li><a href="#button1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#button1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
@@ -174,7 +177,7 @@
 				</ul>
 
 				<ul class="buttonsRegresar">
-					<li><a href="#button1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#button1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
@@ -200,7 +203,7 @@
 					<li><a href="#animacionUnion2"><span class="fas fa-play"></span><span class="tab-text">Ver animación 2</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
-					<li><a href="#buttonT1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
@@ -219,7 +222,7 @@
 					<li><a href="#animacionConcatenacion"><span class="fas fa-play"></span><span class="tab-text">Ver animación</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
-					<li><a href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
@@ -238,7 +241,7 @@
 					<li><a href="#animacionCierre"><span class="fas fa-play"></span><span class="tab-text">Ver animación</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
-					<li><a href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
@@ -247,28 +250,28 @@
 			<article id="animacionUnion1">
 				<img src="img/animacionUnion1.gif">
 				<ul class="buttonsRegresar">
-					<li><a href="#buttonO1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
 			<article id="animacionUnion2">
 				<img src="img/animacionUnion2.gif">
 				<ul class="buttonsRegresar">
-					<li><a href="#buttonO1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
 			<article id="animacionConcatenacion">
 				<img src="img/animacionConcatenacion.gif">
 				<ul class="buttonsRegresar">
-					<li><a href="#buttonO2"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO2"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
 			<article id="animacionCierre">
 				<img src="img/animacionCierreEstrella.gif">
 				<ul class="buttonsRegresar">
-					<li><a href="#buttonO3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
@@ -277,14 +280,14 @@
 			<article id="animacionCompletez">
 				<img src="img/animacionCompletez.gif">
 				<ul class="buttonsRegresar">
-					<li><a href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
 			<article id="animacionCorreccion">
 				<img src="img/animacionCorreccion.gif">
 				<ul class="buttonsRegresar">
-					<li><a href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
