@@ -20,7 +20,7 @@
 
 <!-- EMPIEZA EL CUERPO DE MI PAGINA--------------------------------------------------- -->
 
-<body>
+<body>7
 
 	<div class="contenedorVertical"></div>
 
@@ -46,10 +46,14 @@
 
 			<!-- SECCION INICIO------------------------------------------------ -->
 			<article id="tab1">
-				<h1>Estimado(a) alumno(a):​</h1>
-				<p>Tomando en cuenta que te adentrarás en el estudio del tema “Expresiones Regulares”, te presentamos esta aplicación, la cual, te será de utilidad para tener una mejor comprensión de dicha temática. También, deseamos que ésta te ofrezca una experiencia interesante, dinámica e interactiva de aprendizaje.</p>
-				<p>Asimismo, esperamos que la aplicación mencionada sea de tu agrado y que la información que brinda, así como la forma en el que ésta se presenta, facilite tu aprendizaje acerca de este tópico.​</p>
-				<h4 align="center">¡Bienvenido!</h4>
+				<h1>Bienvenida​</h1>
+				<p>Esta aplicación fue diseñada para apoyar el estudio de las Expresiones Regulares, como parte
+					fundamental de la Teoría de la Computación. Con ayuda del Menú principal puedes ir a las
+					secciones de Teoría, Ejemplos, Actividades y Evaluación. El sonido de fondo es opcional y
+					lo puedes configurar en el menú Opciones.</p>
+				<p>Esperamos que el contenido sea de utilidad para facilitar el aprendizaje y/o enriquecer los
+					conocimientos acerca del tema. Si tienes algún comentario o sugerencia, gradecemos que lo
+					envíes al correo que aparece en la sección de Créditos.</p>
 			</article>
 
 			<!-- SECCION MENU------------------------------------------------- -->
@@ -69,10 +73,10 @@
 				<h1>Créditos</h1>
 				<br>
 				<h4 align="center">Elaborado por:</h4>
-				<p id="autores">Br. Alejandro Emmanuel Canche Kú</p>
-				<p id="autores">Br. Randy Josue Castro</p>
-				<h4 align="center">En coordinación:</h4>
-				<p id="autores">MC. Cinthia Maribel González Segura</p>
+				<p id="autores">Br. Alejandro Emmanuel Canche Kú (Programación y Diseño web)</p>
+				<p id="autores">Br. Randy Josue Castro (Revisión Pedagógica y Animaciones)</p>
+				<h4 align="center">Diseño y coordinación general:</h4>
+				<p id="autores">MC. Cinthia Maribel González Segura <b>(gsegura@correo.uady.mx)</b></p>
 			</article>
 
 			<!-- SECCION OPCIONES------------------------------------------------- -->
@@ -86,11 +90,11 @@
 			<!-- SECCION TEORIA----------------------------------------- -->
 			<article id="button1">
 				<h1>Introducción</h1>
-				<p>Una ER (Expresion Regular) es una abreviatura que representa a todas las
-				   palabras que forman parte de un lenguaje regular.</p>
+				<p>Una Expresión Regular (ER) es una abreviatura que representa a todas las palabras que
+					forman parte de cierto Lenguaje Regular.</p>
 
-				<p>A partir de una ER se pueden obtener todas las 
-				   palabras aceptadas por el lenguaje regular correspondiente.</p>
+				<p>A partir de un Lenguaje Regular (LR) es posible obtener una ER que represente a todas las
+					palabras que lo conforman y no represente a las palabras que no forman parte de ese LR.</p>
 
 				<br>
 				<!-- CREO TAB DE NAVEGACIÓN MENU 2----------------------------------------- -->
@@ -151,6 +155,10 @@
 					<br>
 					4ª.- Unión 
 				</p>
+				<ul class="buttonsAnimaciones">
+					<li><a href="#animacionPrecendencia1"><span class="fas fa-play"></span><span class="tab-text">Ver animación 1</span></a></li>
+					<li><a href="#animacionPrecendencia2"><span class="fas fa-play"></span><span class="tab-text">Ver animación 2</span></a></li>
+				</ul>
 
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#button1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
@@ -173,7 +181,7 @@
 				<br>
 				<ul class="buttonsAnimaciones">
 					<li><a href="#animacionCompletez"><span class="fas fa-play"></span><span class="tab-text">Completez</span></a></li>
-					<li><a href="#animacionCorreccion"><span class="fas fa-play"></span><span class="tab-text">Correctez</span></a></li>
+					<li><a href="#animacionCorreccion"><span class="fas fa-play"></span><span class="tab-text">Corrección</span></a></li>
 				</ul>
 
 				<ul class="buttonsRegresar">
@@ -188,9 +196,8 @@
 				<h1>Unión  (α + β)</h1>
 
 				<p>
-					Si α y β  son dos expresiones regulares, α + β denota la unión de ellas,
-					que se lee como α ó β. Es decir, dos posibles caminos a elegir: 
-					se toma uno o bien, se toma el otro.
+					Si α y β son dos expresiones regulares, α + β denota la unión entre ellas, que se lee como α
+					ó β. Es decir, dos posibles caminos a elegir: se toma uno o bien, se toma el otro.
 				</p>
 				<h4 align="center">
 					α + β --> el símbolo + indica 2 caminos <br>
@@ -211,8 +218,9 @@
 			<article id="buttonO2">
 				<h1>Concatenación (αβ)</h1>
 				<p>
-					Si α y β son expresiones regulares, αβ denota la concatenación
-					de ellas, es decir, representa escribir una seguida de la otra
+					Si α y β son 2 expresiones regulares, αβ y α.β denota la concatenación de ellas. Es decir, la
+					concatenación se representa comúnmente escribiendo la primera (α) seguida de la segunda
+					(β) y, opcionalmente, puede haber un punto entre ellas.
 				</p>
 				<h4 align="center">
 					{α β} = {α} {β}= {α } . {β}
@@ -230,13 +238,14 @@
 			<article id="buttonO3">
 				<h1>Cierre de estrella (α*)</h1>
 				<p>
-					La expresión α* equivale a un ciclo en la expresion α, significa que se 
-					puede tomar repetidas veces la expresión, generando así las palabras:
+					La expresión α* equivale a la existencia de un ciclo opcional en la expresión α. Esto
+					significa que la expresión α puede concatenarse (repetirse) cualquier cantidad de veces, ya
+					sea 0, 1, 2, … repeticiones, generando así las palabras: <b>α*={ λ, α, αα, ααα, αααα, ...}</b>
 				</p>
-				<h4 align="center">
-					α*={ λ, α, αα, ααα, αααα, ...}
-				</h4>
-				<br>
+				<p>
+					<b>Nota:</b> Con cero repeticiones de cualquier expresión se genera la palabra vacía, la cual se
+					puede representar con λ o Ɛ.
+				</p>
 				<ul class="buttonsAnimaciones">
 					<li><a href="#animacionCierre"><span class="fas fa-play"></span><span class="tab-text">Ver animación</span></a></li>
 				</ul>
@@ -274,6 +283,21 @@
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
+
+			<!-- INICIA SECCIONES DE ANIMACIONES DE PROCEDENCIA-------------------------------------- -->
+
+			<article id="animacionPrecendencia1">
+				<ul class="buttonsRegresar">
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT2"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
+			<article id="animacionPrecendencia2">
+				<ul class="buttonsRegresar">
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT2"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
 
 			<!-- INICIA SECCIONES DE ANIMACIONES DE CONDICIONES-------------------------------------- -->
 
