@@ -136,7 +136,7 @@ ul.tabs li a .tab-text{
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
-		background: url(img/Fondo2.png);
+		background: url(img/Fondo.png);
 		background-size: cover;
 		background-position: center;
 	}
