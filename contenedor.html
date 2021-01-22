@@ -9,13 +9,16 @@
 	<link rel="stylesheet" href="css/all.min.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/scriptMostrarArticles.js"></script>
+	<script src="js/scriptFuncionesGAlfabetos.js"></script>
+	
+	<!--<script src="js/main.js"></script>
 	<script src="js/secondMain.js"></script>
 	<script src="js/thirdMain.js"></script>
 	<script src="js/regresar.js"></script>
 	<script src="js/operacionesMain.js"></script>
 	<script src="js/animaciones.js"></script>
-	<script src="js/sonidoHoverMenu.js"></script>
+	<script src="js/sonidoHoverMenu.js"></script> -->
 </head>
 
 <!-- EMPIEZA EL CUERPO DE MI PAGINA--------------------------------------------------- -->
@@ -30,6 +33,7 @@
 		<audio id="clicsTab" src="audio/sonido.wav"></audio>
 		<audio id="clicsMenu" src="audio/clicMenu.wav"></audio>
 		<audio id="clicsRegresar" src="audio/clicRegresar.wav"></audio>
+		<audio id="clicsAnimaciones" src="audio/clicReproducir.wav"></audio>
 
 		
 		<!-- CREO TAB DE NAVEGACIÓN PRINCIPAL----------------------------------------- -->	
@@ -107,7 +111,41 @@
 
 			<!-- SECCION EJEMPLOS----------------------------------------- -->
 			<article id="button2">
-				<h1>EJEMPLOS</h1>
+				<h1>Generador de Expresiones</h1>
+				<h1>S= {a,b}</h1>
+
+				<ul class="buttonGALF">
+					<li><a onclick="document.getElementById('clicsMenu').play();ocultarAB();" href="#alfabeto1"><span class="tab-text">Generar Alfabeto</span></a></li>
+				</ul>
+
+				<ul class="buttonMostrarER">
+					<li><a onclick="mostrarAB();"><span class="tab-text">Mostrar ER</span></a></li>
+				</ul>
+				
+				<div id="palabrasAceptadasAB" style="display: none">
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td>aaabbb</td>
+					      <td>aaabcc</td>
+					    </tr>
+					    <tr class="active-row">
+					      <td>aab</td>
+					      <td>aaaacc</td>
+					    </tr>
+					    <tr>
+					      <td>aaabbb</td>
+					      <td>abccc</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
 			</article>
 
 			<!-- SECCION ACTIVIDADES----------------------------------------- -->
@@ -156,8 +194,8 @@
 					4ª.- Unión 
 				</p>
 				<ul class="buttonsAnimaciones">
-					<li><a href="#animacionPrecendencia1"><span class="fas fa-play"></span><span class="tab-text">Ver animación 1</span></a></li>
-					<li><a href="#animacionPrecendencia2"><span class="fas fa-play"></span><span class="tab-text">Ver animación 2</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionPrecendencia1"><span class="fas fa-play"></span><span class="tab-text">Ver animación 1</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionPrecendencia2"><span class="fas fa-play"></span><span class="tab-text">Ver animación 2</span></a></li>
 				</ul>
 
 				<ul class="buttonsRegresar">
@@ -180,8 +218,8 @@
 				</p>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a href="#animacionCompletez"><span class="fas fa-play"></span><span class="tab-text">Completez</span></a></li>
-					<li><a href="#animacionCorreccion"><span class="fas fa-play"></span><span class="tab-text">Corrección</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCompletez"><span class="fas fa-play"></span><span class="tab-text">Completez</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCorreccion"><span class="fas fa-play"></span><span class="tab-text">Corrección</span></a></li>
 				</ul>
 
 				<ul class="buttonsRegresar">
@@ -206,8 +244,8 @@
 				</h4>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a href="#animacionUnion1"><span class="fas fa-play"></span><span class="tab-text">Ver animación 1</span></a></li>
-					<li><a href="#animacionUnion2"><span class="fas fa-play"></span><span class="tab-text">Ver animación 2</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion1"><span class="fas fa-play"></span><span class="tab-text">Ver animación 1</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion2"><span class="fas fa-play"></span><span class="tab-text">Ver animación 2</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
@@ -227,7 +265,7 @@
 				</h4>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a href="#animacionConcatenacion"><span class="fas fa-play"></span><span class="tab-text">Ver animación</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionConcatenacion"><span class="fas fa-play"></span><span class="tab-text">Ver animación</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
@@ -247,7 +285,7 @@
 					puede representar con λ o Ɛ.
 				</p>
 				<ul class="buttonsAnimaciones">
-					<li><a href="#animacionCierre"><span class="fas fa-play"></span><span class="tab-text">Ver animación</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCierre"><span class="fas fa-play"></span><span class="tab-text">Ver animación</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
@@ -313,6 +351,82 @@
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
+			</article>
+
+			<article id="alfabeto1">
+				<h1>Generador de Expresiones</h1>
+				<h1>S= {a,b,c}</h1>
+
+				<ul class="buttonGALF">
+					<li><a onclick="document.getElementById('clicsMenu').play();ocultarABC();" href="#alfabeto2"><span class="tab-text">Generar Alfabeto</span></a></li>
+				</ul>
+
+				<ul class="buttonMostrarER">
+					<li><a onclick="mostrarABC();"><span class="tab-text">Mostrar ER</span></a></li>
+				</ul>
+				
+				<div id="palabrasAceptadasABC" style="display: none">
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td>aaabbb</td>
+					      <td>aaabcc</td>
+					    </tr>
+					    <tr class="active-row">
+					      <td>aab</td>
+					      <td>aaaacc</td>
+					    </tr>
+					    <tr>
+					      <td>aaabbb</td>
+					      <td>abccc</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+			</article>
+
+			<article id="alfabeto2">
+				<h1>Generador de Expresiones</h1>
+				<h1>S= {a,b,c,d}</h1>
+
+				<ul class="buttonGALF ">
+					<li><a onclick="document.getElementById('clicsMenu').play();ocultarABCD();" href="#button2"><span class="tab-text">Generar Alfabeto</span></a></li>
+				</ul>
+
+				<ul class="buttonMostrarER">
+					<li><a onclick="mostrarABCD();"><span class="tab-text">Mostrar ER</span></a></li>
+				</ul>
+				
+				<div id="palabrasAceptadasABCD" style="display: none">
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td>aaabbb</td>
+					      <td>aaabcc</td>
+					    </tr>
+					    <tr class="active-row">
+					      <td>aab</td>
+					      <td>aaaacc</td>
+					    </tr>
+					    <tr>
+					      <td>aaabbb</td>
+					      <td>abccc</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>					
 			</article>
 
 		</div>
