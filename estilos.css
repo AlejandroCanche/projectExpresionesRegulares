@@ -632,3 +632,65 @@ ul.buttonMostrarER li a .tab-text{
 	  text-align: center;
 	}
 }
+
+
+/* ESTILOS BUTTONS EJEMPLOS -------------------------*/
+
+ul.buttonsEjER{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+ul.buttonsEjER li{
+	width: 22%;
+	float:left;
+    margin:0px 10px;
+}
+
+ul.buttonsEjER li a{
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	transition: color, background-color, 0.5s;
+	color: white; 
+	background-color: #00102A;
+
+	display: block;
+	padding: 20px 8px;
+	border-radius: 10px;
+}
+
+ul.buttonsEjER li a:hover{
+	color: black;
+	background-color: #C79316;
+	transition: all 200ms;
+	cursor:pointer;
+	box-shadow: 1px 1px 20px 0px #00102A;
+}
+
+ul.buttonsEjER li a .tab-text{
+	margin-left: 8px;
+}
+
+
+
+/* ESTILOS DEL BUTTONS MENU - TEORIA HORIZONTAL RESPONSIVO ---------------*/
+@media screen and (max-width: 800px){
+	ul.buttonsEjER li{
+		width: 25%;
+		float:left;
+	    margin:0px 3px;
+	}
+
+	ul.buttonsEjER li a{
+		font-size: 12px;
+		padding: 8px 8px;
+	}
+	
+	ul.buttonsEjER li a .tab-text{
+		margin-left: 10px;
+	}
+}

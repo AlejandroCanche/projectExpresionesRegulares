@@ -11,14 +11,6 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/scriptMostrarArticles.js"></script>
 	<script src="js/scriptFuncionesGAlfabetos.js"></script>
-	
-	<!--<script src="js/main.js"></script>
-	<script src="js/secondMain.js"></script>
-	<script src="js/thirdMain.js"></script>
-	<script src="js/regresar.js"></script>
-	<script src="js/operacionesMain.js"></script>
-	<script src="js/animaciones.js"></script>
-	<script src="js/sonidoHoverMenu.js"></script> -->
 </head>
 
 <!-- EMPIEZA EL CUERPO DE MI PAGINA--------------------------------------------------- -->
@@ -56,8 +48,8 @@
 					secciones de Teoría, Ejemplos, Actividades y Evaluación. El sonido de fondo es opcional y
 					lo puedes configurar en el menú Opciones.</p>
 				<p>Esperamos que el contenido sea de utilidad para facilitar el aprendizaje y/o enriquecer los
-					conocimientos acerca del tema. Si tienes algún comentario o sugerencia, gradecemos que lo
-					envíes al correo que aparece en la sección de Créditos.</p>
+					conocimientos acerca del tema. Si tienes algún comentario o sugerencia, agradecemos que lo
+					envíes al correo que aparece en la sección de <b>Créditos</b>.</p>
 			</article>
 
 			<!-- SECCION MENU------------------------------------------------- -->
@@ -110,42 +102,14 @@
 			</article>
 
 			<!-- SECCION EJEMPLOS----------------------------------------- -->
+
 			<article id="button2">
-				<h1>Generador de Expresiones</h1>
-				<h1>S= {a,b}</h1>
-
-				<ul class="buttonGALF">
-					<li><a onclick="document.getElementById('clicsMenu').play();ocultarAB();" href="#alfabeto1"><span class="tab-text">Generar Alfabeto</span></a></li>
+				<h1>Ejemplos de Expresiones Regulares</h1>
+				<br><br>
+				<ul class="buttonsEjER">
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#ejemplosER"><span class="tab-text">Animaciones ER</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play()" href="#alfabeto0"><span class="tab-text">Generador ER</span></a></li>
 				</ul>
-
-				<ul class="buttonMostrarER">
-					<li><a onclick="mostrarAB();"><span class="tab-text">Mostrar ER</span></a></li>
-				</ul>
-				
-				<div id="palabrasAceptadasAB" style="display: none">
-					<table class="content-table">
-					  <thead>
-					    <tr>
-					      <th>Aceptadas</th>
-					      <th>Rechazadas</th>
-					    </tr>
-					  </thead>
-					  <tbody>
-					    <tr>
-					      <td>aaabbb</td>
-					      <td>aaabcc</td>
-					    </tr>
-					    <tr class="active-row">
-					      <td>aab</td>
-					      <td>aaaacc</td>
-					    </tr>
-					    <tr>
-					      <td>aaabbb</td>
-					      <td>abccc</td>
-					    </tr>
-					  </tbody>
-					</table>
-				</div>
 			</article>
 
 			<!-- SECCION ACTIVIDADES----------------------------------------- -->
@@ -218,7 +182,8 @@
 				</p>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCompletez"><span class="fas fa-play"></span><span class="tab-text">Completez</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCompletez1"><span class="fas fa-play"></span><span class="tab-text">Completez 1</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCompletez2"><span class="fas fa-play"></span><span class="tab-text">Completez 2</span></a></li>
 					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCorreccion"><span class="fas fa-play"></span><span class="tab-text">Corrección</span></a></li>
 				</ul>
 
@@ -235,17 +200,18 @@
 
 				<p>
 					Si α y β son dos expresiones regulares, α + β denota la unión entre ellas, que se lee como α
-					ó β. Es decir, dos posibles caminos a elegir: se toma uno o bien, se toma el otro.
+					ó β. Es decir, dos posibles caminos a elegir: se toma uno, o bien, se toma el otro.
 				</p>
 				<h4 align="center">
-					α + β --> el símbolo + indica 2 caminos <br>
+					α + β --> el símbolo + indica 2 caminos: <br>
 					O tomo el α, o bien, tomo el β. <br>
 					Sólo 1 a la vez.
 				</h4>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion1"><span class="fas fa-play"></span><span class="tab-text">Ver animación 1</span></a></li>
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion2"><span class="fas fa-play"></span><span class="tab-text">Ver animación 2</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion1"><span class="fas fa-play"></span><span class="tab-text">ER Unidas</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion2"><span class="fas fa-play"></span><span class="tab-text">ER con Unión</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion3"><span class="fas fa-play"></span><span class="tab-text">ER sin Unión</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
@@ -265,7 +231,7 @@
 				</h4>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionConcatenacion"><span class="fas fa-play"></span><span class="tab-text">Ver animación</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionConcatenacion"><span class="fas fa-play"></span><span class="tab-text">ER Concatenadas</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
@@ -285,7 +251,7 @@
 					puede representar con λ o Ɛ.
 				</p>
 				<ul class="buttonsAnimaciones">
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCierre"><span class="fas fa-play"></span><span class="tab-text">Ver animación</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCierre"><span class="fas fa-play"></span><span class="tab-text">Cierre de Estrella</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
@@ -303,6 +269,13 @@
 
 			<article id="animacionUnion2">
 				<img src="img/animacionUnion2.gif">
+				<ul class="buttonsRegresar">
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
+			<article id="animacionUnion3">
+				<img src="img/animacionUnion3.gif">
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
@@ -339,8 +312,15 @@
 
 			<!-- INICIA SECCIONES DE ANIMACIONES DE CONDICIONES-------------------------------------- -->
 
-			<article id="animacionCompletez">
-				<img src="img/animacionCompletez.gif">
+			<article id="animacionCompletez1">
+				<img src="img/animacionCompletez1.gif">
+				<ul class="buttonsRegresar">
+					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
+				</ul>
+			</article>
+
+			<article id="animacionCompletez2">
+				<img src="img/animacionCompletez2.gif">
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
@@ -352,6 +332,47 @@
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
+
+			<!-- INICIA SECCIONES DE EJEMPLOS-------------------------------------- -->
+
+			<article id="alfabeto0">
+				<h1>Generador de Expresiones</h1>
+				<h1>S= {a,b}</h1>
+
+				<ul class="buttonGALF">
+					<li><a onclick="document.getElementById('clicsMenu').play();ocultarAB();" href="#alfabeto1"><span class="tab-text">Generar Alfabeto</span></a></li>
+				</ul>
+
+				<ul class="buttonMostrarER">
+					<li><a onclick="mostrarAB();"><span class="tab-text">Mostrar ER</span></a></li>
+				</ul>
+				
+				<div id="palabrasAceptadasAB" style="display: none">
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>aaabbb</b></td>
+					      <td><b>aaabcc</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>aab</b></td>
+					      <td><b>aaaacc</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>aaabbb</b></td>
+					      <td><b>abccc</b></td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+			</article>
+
 
 			<article id="alfabeto1">
 				<h1>Generador de Expresiones</h1>
@@ -375,16 +396,16 @@
 					  </thead>
 					  <tbody>
 					    <tr>
-					      <td>aaabbb</td>
-					      <td>aaabcc</td>
+					      <td><b>aaabbb</b></td>
+					      <td><b>aaabcc</b></td>
 					    </tr>
 					    <tr class="active-row">
-					      <td>aab</td>
-					      <td>aaaacc</td>
+					      <td><b>aab</b></td>
+					      <td><b>aaaacc</b></td>
 					    </tr>
 					    <tr>
-					      <td>aaabbb</td>
-					      <td>abccc</td>
+					      <td><b>aaabbb</b></td>
+					      <td><b>abccc</b></td>
 					    </tr>
 					  </tbody>
 					</table>
@@ -396,7 +417,7 @@
 				<h1>S= {a,b,c,d}</h1>
 
 				<ul class="buttonGALF ">
-					<li><a onclick="document.getElementById('clicsMenu').play();ocultarABCD();" href="#button2"><span class="tab-text">Generar Alfabeto</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play();ocultarABCD();" href="#alfabeto0"><span class="tab-text">Generar Alfabeto</span></a></li>
 				</ul>
 
 				<ul class="buttonMostrarER">
@@ -413,16 +434,16 @@
 					  </thead>
 					  <tbody>
 					    <tr>
-					      <td>aaabbb</td>
-					      <td>aaabcc</td>
+					      <td><b>aaabbb</b></td>
+					      <td><b>aaabcc</b></td>
 					    </tr>
 					    <tr class="active-row">
-					      <td>aab</td>
-					      <td>aaaacc</td>
+					      <td><b>aab</b></td>
+					      <td><b>aaaacc</b></td>
 					    </tr>
 					    <tr>
-					      <td>aaabbb</td>
-					      <td>abccc</td>
+					      <td><b>aaabbb</b></td>
+					      <td><b>abccc</b></td>
 					    </tr>
 					  </tbody>
 					</table>
