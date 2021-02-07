@@ -7,6 +7,7 @@
 	<title>Expresiones Regulares</title>
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="estilosModals.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/scriptMostrarArticles.js"></script>
@@ -119,7 +120,7 @@
 
 			<!-- SECCION EVALUACION----------------------------------------- -->
 			<article id="button4">
-				<h1>EVALUACIÓn</h1>
+				<h1>EVALUACIÓN</h1>
 			</article>
 
 			<!-- COMIENZA SECCIONES TAB DE NAVEGACIÓN DE MENU-TEORIA-------------------------------- -->
@@ -158,8 +159,7 @@
 					4ª.- Unión 
 				</p>
 				<ul class="buttonsAnimaciones">
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionPrecendencia1"><span class="fas fa-play"></span><span class="tab-text">Ver animación 1</span></a></li>
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionPrecendencia2"><span class="fas fa-play"></span><span class="tab-text">Ver animación 2</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#" id="abrir6"><span class="fas fa-play"></span><span class="tab-text">Precedencia</span></a></li>
 				</ul>
 
 				<ul class="buttonsRegresar">
@@ -182,9 +182,9 @@
 				</p>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCompletez1"><span class="fas fa-play"></span><span class="tab-text">Completez 1</span></a></li>
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCompletez2"><span class="fas fa-play"></span><span class="tab-text">Completez 2</span></a></li>
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCorreccion"><span class="fas fa-play"></span><span class="tab-text">Corrección</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#" id="abrir7"><span class="fas fa-play"></span><span class="tab-text">Completez 1</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#" id="abrir8"><span class="fas fa-play"></span><span class="tab-text">Completez 2</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#" id="abrir9"><span class="fas fa-play"></span><span class="tab-text">Corrección</span></a></li>
 				</ul>
 
 				<ul class="buttonsRegresar">
@@ -209,9 +209,9 @@
 				</h4>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion1"><span class="fas fa-play"></span><span class="tab-text">ER Unidas</span></a></li>
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion2"><span class="fas fa-play"></span><span class="tab-text">ER con Unión</span></a></li>
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionUnion3"><span class="fas fa-play"></span><span class="tab-text">ER sin Unión</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#" id="abrir1"><span class="fas fa-play"></span><span class="tab-text">ER Unidas</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#" id="abrir2"><span class="fas fa-play"></span><span class="tab-text">ER con Unión</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#" id="abrir3"><span class="fas fa-play"></span><span class="tab-text">ER sin Unión</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
@@ -231,7 +231,7 @@
 				</h4>
 				<br>
 				<ul class="buttonsAnimaciones">
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionConcatenacion"><span class="fas fa-play"></span><span class="tab-text">ER Concatenadas</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#" id="abrir4"><span class="fas fa-play"></span><span class="tab-text">ER Concatenadas</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
@@ -251,87 +251,179 @@
 					puede representar con λ o Ɛ.
 				</p>
 				<ul class="buttonsAnimaciones">
-					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#animacionCierre"><span class="fas fa-play"></span><span class="tab-text">Cierre de Estrella</span></a></li>
+					<li><a onclick="document.getElementById('clicsAnimaciones').play()" href="#" id="abrir5"><span class="fas fa-play"></span><span class="tab-text">Cierre de Estrella</span></a></li>
 				</ul>
 				<ul class="buttonsRegresar">
 					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT1"><span class="fas fa-undo"></span><span class="tab-text">Regresar</span></a></li>
 				</ul>
 			</article>
 
-			<!-- INICIA SECCIONES DE ANIMACIONES DE OPERACIONES-------------------------------------- -->
+			<!-- CONTENDEDORES DE ANIMACIONES------------------------------------------------------ -->	
 
-			<article id="animacionUnion1">
-				<img src="img/animacionUnion1.gif">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
+			<!-- INICIA SECCIONES DE ANIMACIONES DE OPERACIONES - UNION-------------------------------------- -->
 
-			<article id="animacionUnion2">
-				<img src="img/animacionUnion2.gif">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
+			<div id="modalUnion1" class="modal">
+				<div class="flex" id="flex1">
+					<div class="contenido-modal">
+						<center><div class="modal-header flex">
+							<h2>Expresiones Regulares - Unión</h2>
+							<span class="close" id="close1">&times;</span>
+						</div></center>
+						<div class="modal-body">
+							<img src="img/animacionUnion1.gif">		
+						</div>
+						<div class="footer">
+							<h3>Derechos Reservados &copy;</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<article id="animacionUnion3">
-				<img src="img/animacionUnion3.gif">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO1"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
+			<div id="modalUnion2" class="modal">
+				<div class="flex" id="flex2">
+					<div class="contenido-modal">
+						<div class="modal-header flex">
+							<h2>Expresiones Con Unión</h2>
+							<span class="close" id="close2">&times;</span>
+						</div>
+						<div class="modal-body">
+							<img src="img/animacionUnion2.gif">		
+						</div>
+						<div class="footer">
+							<h3>Derechos Reservados &copy;</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<article id="animacionConcatenacion">
-				<img src="img/animacionConcatenacion.gif">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO2"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
+			<div id="modalUnion3" class="modal">
+				<div class="flex" id="flex3">
+					<div class="contenido-modal">
+						<div class="modal-header flex">
+							<h2>Expresiones Sin Unión</h2>
+							<span class="close" id="close3">&times;</span>
+						</div>
+						<div class="modal-body">
+							<img src="img/animacionUnion3.gif">		
+						</div>
+						<div class="footer">
+							<h3>Derechos Reservados &copy;</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<article id="animacionCierre">
-				<img src="img/animacionCierreEstrella.gif">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonO3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
+			<!-- INICIA SECCIONES DE ANIMACIONES DE OPERACIONES - CONCATENACIÓN-------------------------------------- -->
+
+			<div id="modalConcatenacion" class="modal">
+				<div class="flex" id="flex4">
+					<div class="contenido-modal">
+						<div class="modal-header flex">
+							<h2>Expresiones Concatenadas</h2>
+							<span class="close" id="close4">&times;</span>
+						</div>
+						<div class="modal-body">
+							<img src="img/animacionConcatenacion.gif">		
+						</div>
+						<div class="footer">
+							<h3>Derechos Reservados &copy;</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- INICIA SECCIONES DE ANIMACIONES DE OPERACIONES - CIERRE DE ESTRELLA-------------------------------------- -->
+
+			<div id="modalCierreEstrella" class="modal">
+				<div class="flex" id="flex5">
+					<div class="contenido-modal">
+						<div class="modal-header flex">
+							<h2>Expresiones - Cierre de Estrella</h2>
+							<span class="close" id="close5">&times;</span>
+						</div>
+						<div class="modal-body">
+							<img src="img/animacionCierreEstrella.gif">		
+						</div>
+						<div class="footer">
+							<h3>Derechos Reservados &copy;</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
 
 			<!-- INICIA SECCIONES DE ANIMACIONES DE PROCEDENCIA-------------------------------------- -->
 
-			<article id="animacionPrecendencia1">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT2"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
-
-			<article id="animacionPrecendencia2">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT2"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
+			<div id="modalPrecedencia" class="modal">
+				<div class="flex" id="flex6">
+					<div class="contenido-modal">
+						<div class="modal-header flex">
+							<h2>Expresiones - Precedencia de Operadores</h2>
+							<span class="close" id="close6">&times;</span>
+						</div>
+						<div class="modal-body">
+							<img src="img/animacionPrecedencia.gif">		
+						</div>
+						<div class="footer">
+							<h3>Derechos Reservados &copy;</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 			<!-- INICIA SECCIONES DE ANIMACIONES DE CONDICIONES-------------------------------------- -->
 
-			<article id="animacionCompletez1">
-				<img src="img/animacionCompletez1.gif">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
+			<div id="modalCompletez1" class="modal">
+				<div class="flex" id="flex7">
+					<div class="contenido-modal">
+						<div class="modal-header flex">
+							<h2>Expresion No Cumple Completez</h2>
+							<span class="close" id="close7">&times;</span>
+						</div>
+						<div class="modal-body">
+							<img src="img/animacionCompletez1.gif">		
+						</div>
+						<div class="footer">
+							<h3>Derechos Reservados &copy;</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<article id="animacionCompletez2">
-				<img src="img/animacionCompletez2.gif">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
+			<div id="modalCompletez2" class="modal">
+				<div class="flex" id="flex8">
+					<div class="contenido-modal">
+						<div class="modal-header flex">
+							<h2>Expresion Cumple Completez</h2>
+							<span class="close" id="close8">&times;</span>
+						</div>
+						<div class="modal-body">
+							<img src="img/animacionCompletez2.gif">		
+						</div>
+						<div class="footer">
+							<h3>Derechos Reservados &copy;</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<article id="animacionCorreccion">
-				<img src="img/animacionCorreccion.gif">
-				<ul class="buttonsRegresar">
-					<li><a onclick="document.getElementById('clicsRegresar').play()" href="#buttonT3"><span class="fa fa-undo"></span><span class="tab-text">Regresar</span></a></li>
-				</ul>
-			</article>
+			<div id="modalCorreccion" class="modal">
+				<div class="flex" id="flex9">
+					<div class="contenido-modal">
+						<div class="modal-header flex">
+							<h2>Condición: Corrección</h2>
+							<span class="close" id="close9">&times;</span>
+						</div>
+						<div class="modal-body">
+							<img src="img/animacionCorreccion.gif">		
+						</div>
+						<div class="footer">
+							<h3>Derechos Reservados &copy;</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<!-- INICIA SECCIONES DE EJEMPLOS-------------------------------------- -->
 
@@ -344,10 +436,11 @@
 				</ul>
 
 				<ul class="buttonMostrarER">
-					<li><a onclick="mostrarAB();"><span class="tab-text">Mostrar ER</span></a></li>
+					<li><a onclick="mostrarAB();"><span class="tab-text">Mostrar Lenguaje</span></a></li>
 				</ul>
 				
 				<div id="palabrasAceptadasAB" style="display: none">
+					<h5> L = "Palabras en S= {a,b} con sufijo aa"</h5>
 					<table class="content-table">
 					  <thead>
 					    <tr>
@@ -357,16 +450,16 @@
 					  </thead>
 					  <tbody>
 					    <tr>
-					      <td><b>aaabbb</b></td>
-					      <td><b>aaabcc</b></td>
+					      <td><b>abaa</b></td>
+					      <td><b>aaabba</b></td>
 					    </tr>
 					    <tr class="active-row">
-					      <td><b>aab</b></td>
-					      <td><b>aaaacc</b></td>
+					      <td><b>bbaa</b></td>
+					      <td><b>aaaab</b></td>
 					    </tr>
 					    <tr>
-					      <td><b>aaabbb</b></td>
-					      <td><b>abccc</b></td>
+					      <td><b>aaaa</b></td>
+					      <td><b>bbbba</b></td>
 					    </tr>
 					  </tbody>
 					</table>
@@ -383,7 +476,7 @@
 				</ul>
 
 				<ul class="buttonMostrarER">
-					<li><a onclick="mostrarABC();"><span class="tab-text">Mostrar ER</span></a></li>
+					<li><a onclick="mostrarABC();"><span class="tab-text">Mostrar Lenguaje</span></a></li>
 				</ul>
 				
 				<div id="palabrasAceptadasABC" style="display: none">
@@ -421,7 +514,7 @@
 				</ul>
 
 				<ul class="buttonMostrarER">
-					<li><a onclick="mostrarABCD();"><span class="tab-text">Mostrar ER</span></a></li>
+					<li><a onclick="mostrarABCD();"><span class="tab-text">Mostrar Lenguaje</span></a></li>
 				</ul>
 				
 				<div id="palabrasAceptadasABCD" style="display: none">
@@ -452,5 +545,6 @@
 
 		</div>
 	</div>
+		<script src="js/scriptModals.js"></script>
 </body>
 </html>
