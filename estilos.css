@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -8,7 +10,7 @@
 
 body{
 	background: #D4D4D4;
-	font-family: 'Open sans';
+	font-family: 'Roboto', sans-serif;
 	background-color: rgb(21,23,44);
 	max-width: 100%;
 }
@@ -21,7 +23,8 @@ body{
 	margin: 30px auto;
 	background: url(img/fondoSeccion.png);
 	background-repeat: no-repeat;
-	font-family: 'Open sans';
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4);
 }
 
 ul.tabs{
@@ -71,7 +74,7 @@ ul.tabs li a .tab-text{
 
 .secciones article{
 	padding: 30px;
-	font-family: 'Open sans';
+	font-family: 'Roboto', sans-serif;;
 }
 
 .secciones article p{
@@ -719,3 +722,5 @@ h5{
 		font-size: 16px;
 	}
 }
+
+

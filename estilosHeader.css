@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: 'open sans';
+    font-family: 'Roboto';
     font-size: 16px;
 }
 
@@ -55,7 +57,7 @@ header .boton {
     text-align: center;
     text-decoration: none;
     border-radius: 16px;
-    font-family: 'Open sans';
+    font-family: 'Roboto';
 }
 
 header .boton:hover{
