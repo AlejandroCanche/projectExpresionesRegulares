@@ -106,9 +106,13 @@
 
 			<article id="button2">
 				<h1>Ejemplos de Expresiones Regulares</h1>
-				<br><br>
+				<br>	
+				<p>Bienvenido a la sección de ejemplos, aqui podrás encontrar algunas animaciones que te ayudarán a una mejor comprensión de las Expresiones Regulares</p>
 				<ul class="buttonsEjER">
 					<li><a onclick="document.getElementById('clicsMenu').play()" href="#ejemplosER"><span class="tab-text">Animaciones ER</span></a></li>
+				</ul>
+				<p>Te proporcionamos un generador de ER ya predefinidas para practicar</p>
+				<ul class="buttonsEjER">
 					<li><a onclick="document.getElementById('clicsMenu').play()" href="#alfabeto0"><span class="tab-text">Generador ER</span></a></li>
 				</ul>
 			</article>
@@ -118,10 +122,14 @@
 				<h1>ACTIVIDADES</h1>
 			</article>
 
+			<!-- SECCION EVALUACIÓN----------------------------------------- -->
 			<article id="button4">
 				<h1>Evaluación</h1>
-				<p>A continuación se te proporciona una evaluación acerca de las Expresiones Regulares, donde puedes aplicar lo aprendido en este material, de tal manera que podrás conocer el dominio de ER que has obtenuido en el recorrido de esta herramienta didáctica</p>
+				<p>A continuación se te proporciona una evaluación acerca de las Expresiones Regulares, donde puedes aplicar lo aprendido en este material, de tal manera que podrás conocer el dominio de ER que has obtenido en el recorrido de esta herramienta didáctica</p>
+				
 				<p><b>Competencia:</b> Emplea expresiones regulares para resolver problemas computacionales, considerando para ello la teoría existente.</p>
+
+				<p><b>Nota:</b> Al entrar a la evaluacón, puedes resolverlo en modo pantalla vertical.</p>
 
 				<div class="divBoton"><a href="evaluacion.html" class="boton">Comenzar</a></div>
 				
@@ -446,7 +454,7 @@
 				</ul>
 				
 				<div id="palabrasAceptadasAB" style="display: none">
-					<h5> L = "Palabras en S= {a,b} con sufijo aa"</h5>
+					<h5>------------------------ ER = a*b*(ab) ------------------------</h5>
 					<table class="content-table">
 					  <thead>
 					    <tr>
@@ -456,16 +464,16 @@
 					  </thead>
 					  <tbody>
 					    <tr>
-					      <td><b>abaa</b></td>
-					      <td><b>aaabba</b></td>
+					      <td><b>ab</b></td>
+					      <td><b>ba</b></td>
 					    </tr>
 					    <tr class="active-row">
-					      <td><b>bbaa</b></td>
 					      <td><b>aaaab</b></td>
+					      <td><b>ababa</b></td>
 					    </tr>
 					    <tr>
-					      <td><b>aaaa</b></td>
-					      <td><b>bbbba</b></td>
+					      <td><b>aaaaab</b></td>
+					      <td><b>abbbba</b></td>
 					    </tr>
 					  </tbody>
 					</table>
