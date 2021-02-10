@@ -27,6 +27,29 @@ body{
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4);
 }
 
+
+.contenedor { display:block; }
+         @media only screen and (orientation:portrait){
+            .contenedor {  
+                  -webkit-transform: rotate(90deg);
+                  -moz-transform: rotate(90deg);
+                  -o-transform: rotate(90deg);
+                  -ms-transform: rotate(90deg);
+                  transform: rotate(90deg);
+                 }
+ 
+         }
+         @media only screen and (orientation:landscape){
+            .contenedor {  
+                  -webkit-transform: rotate(0deg);
+                  -moz-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                  -ms-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                 }
+         }
+
+         
 ul.tabs{
 	width: 100%;
 	background: rgb(0,16,42);
@@ -129,21 +152,6 @@ ul.tabs li a .tab-text{
 	display: none;
 }
 
-@media all and (orientation: portrait){
-	.contenedor{
-		display: none;
-	}
-	.contenedorVertical{
-		display: block;
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		z-index: 1;
-		background: url(img/Fondo.png);
-		background-size: cover;
-		background-position: center;
-	}
-}
 
 /* ESTILOS DE LOS BUTTONS MENU  --------------------------*/
 
@@ -723,4 +731,32 @@ h5{
 	}
 }
 
+
+.divBoton{
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+}
+
+.boton {
+	background-color: #00102A;
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    font-family: 'Roboto';
+}
+
+.boton:hover{
+    color: black;
+    background-color: #C79316;
+    transition: all 600ms;
+    cursor:pointer;
+    box-shadow: 1px 1px 5px 0px white;
+}
 
