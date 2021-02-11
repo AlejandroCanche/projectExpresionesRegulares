@@ -682,37 +682,35 @@ ul.buttonsEjER li a .tab-text{
 
 @media screen and (max-width: 800px){
 	ul.buttonsEjER{
-		width: 50%;
+		width: 70%;
 	}
 
-	ul.bbuttonsEjER li{
+	ul.buttonsEjER li{
     	margin: 4px;
 	}
 
 	ul.buttonsEjER li a{
 		font-size: 12px;
-		padding: 10px 0px;
+		padding: 5px 0px;
 	}
 }
 
 
-/* ESTILOS DEL BUTTONS MENU - TEORIA HORIZONTAL RESPONSIVO ---------------*/
 @media screen and (max-width: 800px){
+	ul.buttonsEjER{
+		width: 40%;
+	}
+
 	ul.buttonsEjER li{
-		width: 25%;
-		float:left;
-	    margin:0px 3px;
+    	margin: 4px;
 	}
 
 	ul.buttonsEjER li a{
 		font-size: 12px;
-		padding: 8px 8px;
-	}
-	
-	ul.buttonsEjER li a .tab-text{
-		margin-left: 10px;
+		padding: 5px 0px;
 	}
 }
+
 
 h5{
 	font-size: 20px;
@@ -768,4 +766,13 @@ h5{
     cursor:pointer;
     box-shadow: 1px 1px 5px 0px white;
 }
+
+@media screen and (max-width: 800px){
+	.boton{
+		padding: 5px;
+   		width: 100px;
+   		font-size: 12px;
+	}
+}
+
 
