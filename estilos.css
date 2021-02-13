@@ -428,7 +428,7 @@ ul.buttonsAnimaciones li a .tab-text{
 
 @media screen and (max-width: 800px){
 	ul.buttonsAnimaciones li{
-		width: 26%;
+		width: 28%;
 		float:left;
 	    margin:0px 3px;
 	}

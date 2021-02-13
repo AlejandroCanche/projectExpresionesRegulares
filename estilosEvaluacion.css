@@ -25,7 +25,7 @@ body{
 }
 
 .quiz-title{
-    font-size: 3rem;
+    font-size: 2.5rem;
     animation-name: movingText;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -50,7 +50,8 @@ h5{
 
 .score-board{
     padding: 15px 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color:#C79316;
 }
 
 .question-box{
@@ -73,7 +74,7 @@ h5{
 }
 
 .btn-hover-effect{
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 2px solid rgba(238, 228, 228, 0.822);
     background: #00102A;
     width: 200px;
@@ -85,7 +86,7 @@ h5{
 }
 
 .btn-hover-effect:hover{
-    color: #232323;
+    color: #C79316;
     animation-name: play-effect;
     animation-duration: 0.4s;
     animation-iteration-count: 2;
@@ -170,5 +171,9 @@ h5{
 
     .option-right .option-container div:first-of-type{
         margin-top: 0;
+    }
+
+    .option-text{
+        font-size: 1.2rem;
     }
 }

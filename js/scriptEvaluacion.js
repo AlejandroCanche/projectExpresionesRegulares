@@ -111,7 +111,7 @@ optionColl[8] = {
 
 questionColl[9] = "10. ¿Cuál de estas descripciones corresponde al Lenguaje Regular denotado por la ER a(a+b)*b?";
 optionColl[9] = {
-    options: ['{Palabras en ∑={a,b} que tienen prefijo b}', '{Palabras en ∑={a,b} que empiezan con a o terminan con b}', '{Palabras en ∑={a,b} que empiezan con a y terminan con b}', '{Palabras en ∑={a,b} que tienen sufijo a}']
+    options: ['{Palabras en ∑={a,b} que tienen prefijo b}', '{Palabras en ∑={a,b} que inician con a o terminan con b}', '{Palabras en ∑={a,b} que inician con a y terminan con b}', '{Palabras en ∑={a,b} que tienen sufijo a}']
 };
 /********** termina seccion de preguntas ***** */
 
