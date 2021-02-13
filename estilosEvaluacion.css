@@ -180,7 +180,7 @@ h5{
 }
 
 @media only screen and (orientation:portrait){
-    #container {  
+    .main-wrapper{  
         -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
@@ -190,7 +190,7 @@ h5{
 
 }
 @media only screen and (orientation:landscape){
-    #container {  
+    #main-wrapper {  
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
       -o-transform: rotate(90deg);
