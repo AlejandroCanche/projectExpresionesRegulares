@@ -175,26 +175,28 @@ h5{
     }
 
     .option-text{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
-@media only screen and (orientation:portrait){
-    .main-wrapper{  
-        -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
+@media(max-width: 800px){
+    .option-wrapper{
+        flex-direction: column;
+    }
+    .option-left, .option-right{
+        width: 100%;
+    }
 
+    .option-right .option-container div:first-of-type{
+        margin-top: 0;
+    }
+
+    .option-text{
+        font-size: 1.2rem;
+    }
+
+    .option-box{
+        height: 75px;
+    }
 }
-@media only screen and (orientation:landscape){
-    #main-wrapper {  
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-  }
-}
+
