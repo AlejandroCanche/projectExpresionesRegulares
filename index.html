@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BOTER | Expresiones Regulares</title>
     <link rel="stylesheet" href="estilosHeader.css">
+    <link rel="shortcut icon" href="img/iconBOTER.png" type="image/x-icon">
 </head>
 
 <body>
@@ -25,11 +26,12 @@
             <h2 class="titulo-footer">Contactanos</h2>
             <h3 class="subtitulo-footer">Cualquier duda, comentario o sugerencia</h3>
             <div class="footer">
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Nombre">
-                    <input type="email" name="" id="" placeholder="Email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
-                    <input type="submit" value="Enviar">
+                <form action="php/correos.php" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre" data-msg="Por favor introdusca su nombre" >
+                    <input type="text" name="asunto" placeholder="Asunto" data-msg="or favor escriba un asunto" >
+                    <input type="email" name="correo" placeholder="Email" data-msg="Por favor escriba un correo valido">
+                    <textarea cols="30" rows="10" name="mensaje" placeholder="Ingrese su mensaje" data-msg="Por favor escriba algo para nosotros"></textarea>
+                    <input type="submit" value="enviar">
                 </form>
             </div>
         </div>

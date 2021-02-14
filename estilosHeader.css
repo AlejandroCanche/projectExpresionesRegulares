@@ -102,13 +102,24 @@ form {
     margin: auto;
 }
 
-input[type="text"],
-input[type="email"] {
+input[type="text"] {
     display: inline-block;
     width: 48%;
     padding: 13px;
     border: none;
-    color: #fff;
+    color: black;
+    font-family: 'open sans';
+    background: white;
+    margin-bottom: 16px;
+    border-top: 5px solid rgba(37, 37, 33, .7);
+}
+
+input[type="email"]{
+    display: inline-block;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    color: black;
     font-family: 'open sans';
     background: white;
     margin-bottom: 16px;
@@ -131,7 +142,7 @@ textarea {
     background: white;
     padding: 13px;
     border: none;
-    color: #fff;
+    color: black;
     font-family: 'open sans';
     margin-bottom: 16px;
 }

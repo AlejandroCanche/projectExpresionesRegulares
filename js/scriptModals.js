@@ -193,3 +193,91 @@ window.addEventListener('click', function(e){
         modalCorreccion.style.display = 'none';
     }
 });
+
+
+
+let modalEjemplo1= document.getElementById('modalEjemplo1');
+let flex10 = document.getElementById('flex10');
+let abrir10 = document.getElementById('abrir10');
+let cerrar10 = document.getElementById('close10');
+
+abrir10.addEventListener('click', function(){
+    modalEjemplo1.style.display = 'block';
+});
+
+cerrar10.addEventListener('click', function(){
+    modalEjemplo1.style.display = 'none';
+});
+
+window.addEventListener('click', function(e){
+    console.log(e.target);
+    if(e.target == flex10){
+        modalEjemplo1.style.display = 'none';
+    }
+});
+
+
+
+let modalEjemplo2= document.getElementById('modalEjemplo2');
+let flex11 = document.getElementById('flex11');
+let abrir11 = document.getElementById('abrir11');
+let cerrar11 = document.getElementById('close11');
+
+abrir11.addEventListener('click', function(){
+    modalEjemplo2.style.display = 'block';
+});
+
+cerrar11.addEventListener('click', function(){
+    modalEjemplo2.style.display = 'none';
+});
+
+window.addEventListener('click', function(e){
+    console.log(e.target);
+    if(e.target == flex11){
+        modalEjemplo2.style.display = 'none';
+    }
+});
+
+
+
+let modalEjemplo3= document.getElementById('modalEjemplo3');
+let flex12 = document.getElementById('flex12');
+let abrir12 = document.getElementById('abrir12');
+let cerrar12 = document.getElementById('close12');
+
+abrir12.addEventListener('click', function(){
+    modalEjemplo3.style.display = 'block';
+});
+
+cerrar12.addEventListener('click', function(){
+    modalEjemplo3.style.display = 'none';
+});
+
+window.addEventListener('click', function(e){
+    console.log(e.target);
+    if(e.target == flex12){
+        modalEjemplo3.style.display = 'none';
+    }
+});
+
+
+
+let modalEjemplo4= document.getElementById('modalEjemplo4');
+let flex13 = document.getElementById('flex13');
+let abrir13 = document.getElementById('abrir13');
+let cerrar13 = document.getElementById('close13');
+
+abrir13.addEventListener('click', function(){
+    modalEjemplo4.style.display = 'block';
+});
+
+cerrar13.addEventListener('click', function(){
+    modalEjemplo4.style.display = 'none';
+});
+
+window.addEventListener('click', function(e){
+    console.log(e.target);
+    if(e.target == flex13){
+        modalEjemplo4.style.display = 'none';
+    }
+});
