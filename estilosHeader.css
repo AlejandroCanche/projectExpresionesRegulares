@@ -158,6 +158,19 @@ input[type="submit"] {
 
 /* Responsive */
 
+@media screen and (max-width:800px) {
+    header .textos {
+        margin-top: 130px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    header .titulo {
+        font-size: 75px;
+    }
+}
+
+
 
 @media screen and (max-width:610px) {
     header .textos {

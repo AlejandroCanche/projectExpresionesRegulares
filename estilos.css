@@ -13,8 +13,6 @@ body{
 	font-family: 'Roboto', sans-serif;
 	background-color: rgb(21,23,44);
 	max-width: 100%;
-    background: url("img/bg.png") center no-repeat;
-    background-size: cover;
 }
 
 /* ESTILOS DEL ENCABEZADO MENU Y SECCIONES --------------------------*/
