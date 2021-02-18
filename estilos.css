@@ -81,6 +81,7 @@ ul.tabs li a .tab-text{
 	text-align: justify;
 	padding-right: 90px;
 	padding-left: 90px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .secciones article h1{
@@ -774,4 +775,36 @@ h5{
 	}
 }
 
+.botonReinicio{
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
 
+	transition: color, background-color, 0.5s;
+	color: white; 
+	background-color: #00102A;
+
+	display: block;
+	padding: 10px 4px;
+	border-radius: 10px;
+}
+
+.botonReinicio:hover{
+    color: black;
+    background-color: #C79316;
+    transition: all 600ms;
+    cursor:pointer;
+    box-shadow: 1px 1px 5px 0px white;
+}
+
+@media screen and (max-width: 800px){
+	.botonReinicio{
+		width: 30%;
+	    margin:0px 3px;
+	}
+
+	.botonReinicio{
+		font-size: 11px;
+		padding: 2px 2px;
+	}
+}
