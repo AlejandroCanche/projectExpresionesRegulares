@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="estilosModals.css">
-	 <link rel="shortcut icon" href="img/iconBOTER.png" type="image/x-icon">
+	<link rel="stylesheet" href="estilosEvaluacionER.css">
+	<link rel="shortcut icon" href="img/iconBOTER.png" type="image/x-icon">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/scriptMostrarArticles.js"></script>
@@ -121,16 +122,82 @@
 			<!-- SECCION ACTIVIDADES----------------------------------------- -->
 			<article id="button3">
 				<h1>ACTIVIDADES</h1>
+				<br>
+				<p><b>Competencia:</b> Emplea expresiones regulares para resolver problemas computacionales, considerando para ello la teoría existente.</p>
+
+				<div class="start_btn"><button>Comenzar</button></div>
+
+				<!-- Info Box -->
+				<div class="info_box">
+					<div class="info-title"><span>Algunas reglas de esta actividad</span></div>
+					<div class="info-list">
+						<div class="info">1. Tendrá solo <span>15 segundos</span>  para cada pregunta.</div>
+						<br>
+						<div class="info">2. Al seleccionar su respuesta, no se puede deshacer.</div>
+						<br>
+						<div class="info">3. No puede seleccionar ninguna opción una vez que pasa el tiempo.</div>
+						<br>
+						<div class="info">4. No puede salir del cuestionario mientras juega.</div>
+						<br>
+						<div class="info">5. Obtendrá puntos según sus respuestas correctas.</div>
+					</div>
+					<div class="buttons">
+						<button class="quit">Salir</button>
+						<button class="restart">Continuar</button>
+					</div>
+				</div>
+
+				<!-- Quiz Box -->
+				<div class="quiz_box">
+					<header>
+						<div class="title">Actividad ER</div>
+						<div class="timer">
+							<div class="time_left_txt">Tiempo -</div>
+							<div class="timer_sec">15</div>
+						</div>
+						<div class="time_line"></div>
+					</header>
+					<section>
+						<div class="que_text">
+							<!-- Here I've inserted question from JavaScript -->
+						</div>
+						<div class="option_list">
+							<!-- Here I've inserted options from JavaScript -->
+						</div>
+						<div id="divRetro" class="retro_alimentacion">
+							
+						</div>
+					</section>
+
+					<!-- footer of Quiz Box -->
+					<footer>
+						<div class="total_que">
+							<!-- Here I've inserted Question Count Number from JavaScript -->
+						</div>
+						<button class="retro_btn">Retroalimentación</button>
+						<button class="next_btn">Siguiente</button>
+					</footer>
+				</div>
+
+				<!-- Result Box -->
+				<div class="result_box">
+	        		<!--<div class="icon">
+	           		 <i class="fas fa-crown"></i>
+	        		</div>-->
+	       			<div class="complete_text">¡Has completado el cuestionario!</div>
+	        		<div class="score_text">
+	        		<!-- Here I've inserted Score Result from JavaScript -->
+	        		</div>
+	       			 <div class="buttons">
+	        			<button class="restart">Reiniciar</button>
+	        			<button class="quit">Salir</button>
+	        		</div>
+    			</div>
 			</article>
 
 			<!-- SECCION EVALUACIÓN----------------------------------------- -->
 			<article id="button4">
 				<h1>Evaluación</h1>
-				<p>A continuación se te proporciona una evaluación acerca de las Expresiones Regulares, donde puedes aplicar lo aprendido en este material, de tal manera que podrás conocer el dominio de ER que has obtenido en el recorrido de esta herramienta didáctica</p>
-				
-				<p><b>Competencia:</b> Emplea expresiones regulares para resolver problemas computacionales, considerando para ello la teoría existente.</p>
-
-				<div class="divBoton"><a href="evaluacion.html" class="boton">Comenzar</a></div>
 				
 			</article>
 
@@ -664,5 +731,7 @@
 	</div>
 		<script src="js/scriptModals.js"></script>
 		<script src="js/scriptControlGIF.js"></script>
+    	<script src="js/questions.js"></script>
+   		<script src="js/scriptQuestions.js"></script>
 </body>
 </html>
