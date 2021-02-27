@@ -130,7 +130,7 @@
 .quiz_box header{
     position: relative;
     z-index: 2;
-    height: 60px;
+    height: 66px;
     padding: 0 30px;
     background: #00102A;
     border-radius: 5px 5px 0 0;
@@ -193,9 +193,11 @@ section{
 }
 
 section .que_text{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-align: justify;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 section .option_list{
