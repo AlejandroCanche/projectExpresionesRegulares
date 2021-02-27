@@ -62,6 +62,7 @@ restart_quiz.onclick = ()=>{
     timeText.textContent = "Tiempo -"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
     ocultar();
+    retro_btn.classList.removes("show");
 }
 
 // if quitQuiz button clicked
