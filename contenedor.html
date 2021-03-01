@@ -123,7 +123,7 @@
 			<article id="button3">
 				<h1>ACTIVIDADES</h1>
 				<br>
-				<p><b>Competencia:</b> Emplea expresiones regulares para resolver problemas computacionales, considerando para ello la teoría existente.</p>
+				<p>A continuación se te presenta una actividad a modo de cuestionario, para que puedas retroalimentarte de lo visto en la sección de teoría y ejemplos</p>
 				<br>
 				<div id="buttonStart" class="start_btn"><center><button>Comenzar</button></center></div>
 
@@ -198,9 +198,11 @@
 			<!-- SECCION EVALUACIÓN----------------------------------------- -->
 			<article id="button4">
 				<h1>Evaluación</h1>
-				<p>A continuación se te proporciona una evaluación acerca de las Expresiones Regulares, donde puedes aplicar lo aprendido en este material, de tal manera que podrás conocer el dominio de ER que has obtenido en el recorrido de esta herramienta didáctica</p>
+				<p>A continuación se te proporciona una evaluación acerca de las Expresiones Regulares</p>
 				
 				<p><b>Competencia:</b> Emplea expresiones regulares para resolver problemas computacionales, considerando para ello la teoría existente.</p>
+
+				<p><b>Nota:</b> Si estás en teléfono, una vez entrado en la evaluacón, puede situar tu teléfono en modo vertical</p>
 
 				<div class="divBoton"><a href="evaluacion.html" class="boton">Comenzar</a></div>
 				
@@ -488,7 +490,7 @@
 				<div class="flex" id="flex7">
 					<div class="contenido-modal">
 						<div class="modal-header flex">
-							<h2>Expresion No Cumple Completez</h2>
+							<h2>Expresión No Cumple Completez</h2>
 							<span class="close" id="close7">&times;</span>
 						</div>
 						<div class="modal-body">
@@ -506,7 +508,7 @@
 				<div class="flex" id="flex8">
 					<div class="contenido-modal">
 						<div class="modal-header flex">
-							<h2>Expresion Cumple Completez</h2>
+							<h2>Expresión Cumple Completez</h2>
 							<span class="close" id="close8">&times;</span>
 						</div>
 						<div class="modal-body">
@@ -619,14 +621,42 @@
 				<h1>S= {a,b}</h1>
 
 				<ul class="buttonGALF">
-					<li><a onclick="document.getElementById('clicsMenu').play();ocultarAB();" href="#alfabeto1"><span class="tab-text">Generar Alfabeto</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play();ocultarABC1();ocultarABC2();ocultarABC3();ocultarABC4();mostrarABC();" href="#alfabeto1"><span class="tab-text">Generar Alfabeto</span></a></li>
 				</ul>
 
-				<ul class="buttonMostrarER">
-					<li><a onclick="mostrarAB();"><span class="tab-text">Mostrar ER</span></a></li>
-				</ul>
+				<div id="palabrasAceptadasAB" style="display: block">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarAB();mostrarAB1();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>	
+					<h5>------------------------ ER = a*b*  ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>a</b></td>
+					      <td><b>ba</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>aaaa</b></td>
+					      <td><b>aaba</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>aabb</b></td>
+					      <td><b>bbba</b></td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
 				
-				<div id="palabrasAceptadasAB" style="display: none">
+				<div id="palabrasAceptadasAB1" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarAB1();mostrarAB2();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>	
 					<h5>------------------------ ER = a*b*(ab) ------------------------</h5>
 					<table class="content-table">
 					  <thead>
@@ -651,6 +681,93 @@
 					  </tbody>
 					</table>
 				</div>
+
+				<div id="palabrasAceptadasAB2" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarAB2();mostrarAB3();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>	
+					<h5>------------------------ ER = (ba + ab)*a  ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>a</b></td>
+					      <td><b>baaa</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>baba</b></td>
+					      <td><b>aaaba</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>ababa</b></td>
+					      <td><b>abaab</b></td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+
+				<div id="palabrasAceptadasAB3" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarAB3();mostrarAB4();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>
+					<h5>------------------------ ER = a*(b+a)* ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>Ɛ</b></td>
+					      <td><b>ba</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>aaaa</b></td>
+					      <td><b>bbbba</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>abbbbb</b></td>
+					      <td><b>aaaba</b></td>
+					    </tr>
+					  </tbody>
+					</table>			
+				</div>
+
+				<div id="palabrasAceptadasAB4" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarAB4();mostrarAB();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>
+					<h5>------------------------ ER = (a+b)aab* ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>baa</b></td>
+					      <td><b>aa</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>aaa</b></td>
+					      <td><b>aaaab</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>aaabbbb</b></td>
+					      <td><b>abbbb</b></td>
+					    </tr>
+					  </tbody>
+					</table>			
+				</div>
 			</article>
 
 
@@ -659,14 +776,13 @@
 				<h1>S= {a,b,c}</h1>
 
 				<ul class="buttonGALF">
-					<li><a onclick="document.getElementById('clicsMenu').play();ocultarABC();" href="#alfabeto2"><span class="tab-text">Generar Alfabeto</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play();ocultarABCD1();ocultarABCD2();ocultarABCD3();ocultarABCD4();mostrarABCD();" href="#alfabeto2"><span class="tab-text">Generar Alfabeto</span></a></li>
 				</ul>
 
-				<ul class="buttonMostrarER">
-					<li><a onclick="mostrarABC();"><span class="tab-text">Mostrar ER</span></a></li>
-				</ul>
-				
-				<div id="palabrasAceptadasABC" style="display: none">
+				<div id="palabrasAceptadasABC" style="display: block">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABC();mostrarABC1();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>	
 					<h5>---------------------- ER = (a+b)b*a+c* ----------------------</h5>
 					<table class="content-table">
 					  <thead>
@@ -691,6 +807,122 @@
 					  </tbody>
 					</table>
 				</div>
+				
+				<div id="palabrasAceptadasABC1" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABC1();mostrarABC2();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>	
+					<h5>------------------------ ER = (a+b)b*(b+c)c ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>abc</b></td>
+					      <td><b>abbbac</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>abbbcc</b></td>
+					      <td><b>aabbcc</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>bbbbbc/b></td>
+					      <td><b>aaaacccbbb</b></td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+
+				<div id="palabrasAceptadasABC2" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABC2();mostrarABC3();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>	
+					<h5>------------------------ ER = ab*c ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>ac</b></td>
+					      <td><b>baaac</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>abc</b></td>
+					      <td><b>caaab</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>abbbbbc</b></td>
+					      <td><b>bcaa</b></td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+
+				<div id="palabrasAceptadasABC3" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABC3();mostrarABC4();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>
+					<h5>------------------------ ER = (aa)*b(ab)c* ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>bab</b></td>
+					      <td><b>baac</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>aaab</b></td>
+					      <td><b>aaababc</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>babcccc</b></td>
+					      <td><b>aaaaab</b></td>
+					    </tr>
+					  </tbody>
+					</table>			
+				</div>
+
+				<div id="palabrasAceptadasABC4" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABC4();mostrarABC();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>
+					<h5>------------------------ ER = a*(a+b)c* ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>a</b></td>
+					      <td><b>bca</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>b</b></td>
+					      <td><b>aaacb</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>aaaac</b></td>
+					      <td><b>aabbcc</b></td>
+					    </tr>
+					  </tbody>
+					</table>			
+				</div>
 			</article>
 
 			<article id="alfabeto2">
@@ -698,14 +930,13 @@
 				<h1>S= {a,b,c,d}</h1>
 
 				<ul class="buttonGALF ">
-					<li><a onclick="document.getElementById('clicsMenu').play();ocultarABCD();" href="#alfabeto0"><span class="tab-text">Generar Alfabeto</span></a></li>
+					<li><a onclick="document.getElementById('clicsMenu').play();ocultarAB1();ocultarAB2();ocultarAB3();ocultarAB4();mostrarAB();" href="#alfabeto0"><span class="tab-text">Generar Alfabeto</span></a></li>
 				</ul>
 
-				<ul class="buttonMostrarER">
-					<li><a onclick="mostrarABCD();"><span class="tab-text">Mostrar ER</span></a></li>
-				</ul>
-				
-				<div id="palabrasAceptadasABCD" style="display: none">
+				<div id="palabrasAceptadasABCD" style="display: block">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABCD();mostrarABCD1();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>	
 					<h5>------------------- ER = (ab)*(c+d)d* -------------------</h5>
 					<table class="content-table">
 					  <thead>
@@ -729,7 +960,123 @@
 					    </tr>
 					  </tbody>
 					</table>
-				</div>					
+				</div>
+				
+				<div id="palabrasAceptadasABCD1" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABCD1();mostrarABCD2();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>	
+					<h5>------------------------ ER = a*b(b+c)d* ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>bc</b></td>
+					      <td><b>bbbc</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>bbd</b></td>
+					      <td><b>abbbd</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>aaabcddd</b></td>
+					      <td><b>cddddd</b></td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+
+				<div id="palabrasAceptadasABCD2" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABCD2();mostrarABCD3();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>	
+					<h5>------------------------ ER = ab*cd* ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>ac</b></td>
+					      <td><b>bcd</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>abc</b></td>
+					      <td><b>aabccd</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>acddd</b></td>
+					      <td><b>abddd/b></td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+
+				<div id="palabrasAceptadasABCD3" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABCD3();mostrarABCD4();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>
+					<h5>------------------------ ER = (a+b)c*(cd) ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>acd</b></td>
+					      <td><b>ccccd</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>bcccd</b></td>
+					      <td><b>accdc</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>accccd</b></td>
+					      <td><b>cd</b></td>
+					    </tr>
+					  </tbody>
+					</table>			
+				</div>
+
+				<div id="palabrasAceptadasABCD4" style="display: none">
+					<ul class="buttonMostrarER">
+						<li><a onclick="ocultarABCD4();mostrarABCD();"><span class="tab-text">Generar ER</span></a></li>
+					</ul>
+					<h5>------------------------ ER = a*bcd* ------------------------</h5>
+					<table class="content-table">
+					  <thead>
+					    <tr>
+					      <th>Aceptadas</th>
+					      <th>Rechazadas</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><b>bc</b></td>
+					      <td><b>aacb</b></td>
+					    </tr>
+					    <tr class="active-row">
+					      <td><b>abc</b></td>
+					      <td><b>cbddd</b></td>
+					    </tr>
+					    <tr>
+					      <td><b>bcddd</b></td>
+					      <td><b>abcccd</b></td>
+					    </tr>
+					  </tbody>
+					</table>			
+				</div>				
 			</article>
 
 		</div>

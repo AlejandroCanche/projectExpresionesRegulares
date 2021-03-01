@@ -205,7 +205,7 @@ section .option_list{
     display: block;   
 }
 
-section .retro_alimentación{
+section .retro_alimentacion{
     display: block;
 }
 
@@ -310,7 +310,7 @@ footer button{
     outline: none;
     color: #fff;
     border-radius: 5px;
-    background: rgb(0,16,42,0.7);
+    background:#00102A;
     border: 1px solid white;
     line-height: 10px;
     opacity: 0;

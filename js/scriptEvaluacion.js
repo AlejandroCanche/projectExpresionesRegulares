@@ -64,52 +64,52 @@ const answerColl = [0, 3, 0, 2, 1, 0, 0, 3, 1, 2]; // respuesta correcta de las 
 
 /*************** questions ****** */
 
-questionColl[0] = "1. ¿Cuál de las siguientes palabras es aceptada por la ER: ab*a?";
+questionColl[0] = "¿Cuál de las siguientes palabras es aceptada por la ER: ab*a?";
 optionColl[0] = {
     options: ['aa', 'ababa', 'abab', 'abbaba']
 };
 
-questionColl[1] = "2. ¿Cuál de las siguientes palabras es aceptada por la ER: a(b*a)?";
+questionColl[1] = "¿Cuál de las siguientes palabras es aceptada por la ER: a(b*a)?";
 optionColl[1] = {
     options: ['abbaba', 'abab','ababa', 'aa']
 };
 
-questionColl[2] = "3. ¿Cuál de las siguientes palabras es rechazada por la ER: a(ba*)?";
+questionColl[2] = "¿Cuál de las siguientes palabras es rechazada por la ER: a(ba*)?";
 optionColl[2] = {
     options: ['aa', 'aba', 'ab', 'abaaa']
 };
 
-questionColl[3] = "4. ¿Cuál de las siguientes palabras es rechazada por la ER: a*(b*a)?";
+questionColl[3] = "¿Cuál de las siguientes palabras es rechazada por la ER: a*(b*a)?";
 optionColl[3] = {
     options: ['a', 'aba', 'abb', 'ba']
 };
 
-questionColl[4] = "5. ¿Cuál de estas ER representa al Lenguaje = {Palabras en ∑={a,b} que contienen la subcadena ab}?";
+questionColl[4] = "¿Cuál de estas ER representa al Lenguaje = {Palabras en ∑={a,b} que contienen la subcadena ab}?";
 optionColl[4] = {
     options: ['ab', '(a+b)*ab(a*b)*', 'a*abb*', '(ab)*ab(ba)*']
 };
 
-questionColl[5] = "6. ¿Cuál de estas ER representa al Lenguaje = {Palabras en ∑={a,b} que contienen un número par de a’s}? ";
+questionColl[5] = "¿Cuál de estas ER representa al Lenguaje = {Palabras en ∑={a,b} que contienen un número par de a’s}? ";
 optionColl[5] = {
     options: ['b*(ab*a)*b*', '(aa)*', '(aba)*', 'aa*']
 };
 
-questionColl[6] = "7. ¿Cuál de estas ER representa al Lenguaje = {Palabras en ∑={a,b} que tienen longitud par}?";
+questionColl[6] = "¿Cuál de estas ER representa al Lenguaje = {Palabras en ∑={a,b} que tienen longitud par}?";
 optionColl[6] = {
     options: ['((a+b)(a+b))*', '(a+b)(a+b)', '(a+b)(a+b)*', 'aa+bb']
 };
 
-questionColl[7] = "8. ¿Cuál de estas ER representa al Lenguaje = {anbm|m, n ≥ 0} en ∑={a,b}?";
+questionColl[7] = "¿Cuál de estas ER representa al Lenguaje = {a<sup>n</sup>b<sup>m</sup>|m, n ≥ 0} en ∑={a,b}?";
 optionColl[7] = {
     options: ['(ab)*', 'ab', 'aa*bb*', 'a*b*']
 };
 
-questionColl[8] = "9. ¿Cuál de estas ER representa al Lenguaje = {anb2m| n,m ≥ 0} en ∑={a,b}?";
+questionColl[8] = "¿Cuál de estas ER representa al Lenguaje = {a<sup>n</sup>b<sup>2m</sup>| n,m ≥ 0} en ∑={a,b}?";
 optionColl[8] = {
     options: ['abb', 'a*(bb)*', '(abb)*', 'aa*bb(bb)*']
 };
 
-questionColl[9] = "10. ¿Cuál de estas descripciones corresponde al Lenguaje Regular denotado por la ER a(a+b)*b?";
+questionColl[9] = "¿Cuál de estas descripciones corresponde al Lenguaje Regular denotado por la ER a(a+b)*b?";
 optionColl[9] = {
     options: ['{Palabras en ∑={a,b} que tienen prefijo b}', '{Palabras en ∑={a,b} que inician con a o terminan con b}', '{Palabras en ∑={a,b} que inician con a y terminan con b}', '{Palabras en ∑={a,b} que tienen sufijo a}']
 };
