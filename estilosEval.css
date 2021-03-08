@@ -25,6 +25,8 @@
 #final-section{
     background-color: rgb(0,16,42,0);
     padding-top: 1px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #header{
@@ -137,3 +139,48 @@
     box-shadow: 1px 1px 5px 0px white;
 }
 
+@media screen and (max-width: 800px){
+    #cintaH1{
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    #instruccionesH5{
+        font-size: 0.5rem;
+    }
+
+    #puntuacionH3{
+        font-size: 12px;
+    }
+
+    #question{
+        font-size: 0.5rem;
+    }
+
+    .option-box{
+        height: 20px;
+        margin: 10px;
+    }
+
+    .option-box button{
+        width: 15px;
+        height: 15px;
+        font-size: 0.5rem;
+        left: 10px;
+    }
+
+    .option-text{
+        font-size: 0.5rem;
+        left: 30px;
+    }
+
+    .btn-hover-effect{
+        width: 80px;
+        padding: 5px 20px;
+    }
+
+    .botonSalir{
+        padding: 5px;
+        width: 100px;
+    }
+}
