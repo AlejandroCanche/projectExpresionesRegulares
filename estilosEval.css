@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.main-wrapper{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+#cintaH1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+#puntuacionH3{
+    color: #C79316;
+}
+
+#question{
+    font-size: 1rem;
+}
+
+#question-section,
+#option-section,
+#final-section{
+    background-color: rgb(0,16,42,0);
+    padding-top: 1px;
+}
+
+#header{
+    background-color: rgb(0,16,42,0);
+    padding-top: 10px;
+}
+
+#final-section{
+    padding-bottom: 10px;
+}
+
+.question-box{
+    color: #070707;
+    font-size: 1rem;
+    margin: 1px auto;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+.btn-hover-effect{
+    font-size: 0.8rem;
+    border: 2px solid rgba(238, 228, 228, 0.822);
+    background: #00102A;
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color:white;
+}
+
+.btn-hover-effect:hover{
+    color: black;
+    background-color: #C79316;
+    animation-name: play-effect;
+    animation-duration: 0.4s;
+    animation-iteration-count: 2;
+}
+#instruccionesH5{
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.option-left,
+.option-right{
+    width: 50%;
+}
+
+.option-box{
+    height: 50px;
+    margin: 20px;
+    background: #C79316;
+    border-radius: 50px;
+    position: relative;
+    width: 85%;
+}
+
+.option-box button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    top: 50%;
+    left: 20px;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    font-family: 'Lilita One', cursive;
+    color: #fff;
+    outline: none;
+    background: #00102A;
+}
+
+.option-text{
+    position: absolute;
+    left: 70px;
+    color: #00102A;
+    font-size: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.exit-section{
+    padding-bottom: 40px;
+}
+
+.botonSalir {
+    background-color: #00102A;
+    display: inline-block;
+    padding: 10px;
+    width: 120px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 35px;
+    border: 2px solid rgba(238, 228, 228, 0.822);
+    font-family: 'Roboto';
+}
+
+.botonSalir:hover{
+    color: black;
+    background-color: #C79316;
+    transition: all 600ms;
+    cursor:pointer;
+    box-shadow: 1px 1px 5px 0px white;
+}
+

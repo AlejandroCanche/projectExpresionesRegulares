@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="estilosModals.css">
 	<link rel="stylesheet" href="estilosActividades.css">
+	<link rel="stylesheet" href="estilosEval.css">
 	<link rel="shortcut icon" href="img/iconBOTER.png" type="image/x-icon">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -121,7 +122,7 @@
 
 			<!-- SECCION ACTIVIDADES----------------------------------------- -->
 			<article id="button3">
-				<h1>ACTIVIDADES</h1>
+				<h1>Actividades</h1>
 				<br>
 				<p>A continuación se te presenta una actividad a modo de cuestionario, para que puedas retroalimentarte de lo visto en la sección de teoría y ejemplos</p>
 				<br>
@@ -197,15 +198,83 @@
 
 			<!-- SECCION EVALUACIÓN----------------------------------------- -->
 			<article id="button4">
-				<h1>Evaluación</h1>
-				<p>A continuación se te proporciona una evaluación acerca de las Expresiones Regulares</p>
-				
-				<p><b>Competencia:</b> Emplea expresiones regulares para resolver problemas computacionales, considerando para ello la teoría existente.</p>
+				<h1 id="cintaH1">Evaluación</h1>
+				<div id="seccion" class = "main-wrapper">
+					<section id = "header">
+						<div class = "title-wrapper">
+							<div class = "quiz-title">
+								<h5 id="instruccionesH5">Lee con atención cada ejercicio y selecciona el número correcto en cada caso.</h5>
+							</div>
 
-				<p><b>Nota:</b> Si estás en teléfono, una vez entrado en la evaluacón, puede situar tu teléfono en modo vertical</p>
+							<!-- Score board -->
+							<div class = "score-board">
+								<center><h3 id="puntuacionH3">Puntuación: 
+									<span id = "score">
+										<!-- 0 -->
+									</span>
+								</h3></center>
+							</div>
+						</div>
+					</section>
 
-				<div class="divBoton"><a href="evaluacion.html" class="boton">Comenzar</a></div>
-				
+					<section id = "question-section">
+						<div class = "question-box">
+							<center><h4 id = "question">Which one is the first search engine in internet?</h4></center>
+						</div>
+
+						<div class = "play-btn">
+							<h2 id = "play" class = "btn-hover-effect">Iniciar</h2>
+						</div>
+					</section>
+
+					<section id = "option-section">
+						<div class = "option-wrapper">
+							<div class = "option-left">
+								<div class = "option-container">
+									<div class = "option-box">
+										<button type = "button" id = "opt-btn">
+											1
+										</button>
+										<h4 class = "option-text">Google</h4>
+									</div>
+
+									<div class = "option-box">
+										<button type = "button" id = "opt-btn">
+											2
+										</button>
+										<h4 class = "option-text">Archie</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class = "option-right">
+								<div class = "option-container">
+									<div class = "option-box">
+										<button type = "button" id = "opt-btn">
+											3
+										</button>
+										<h4 class = "option-text">Altavista</h4>
+									</div>
+
+									<div class = "option-box">
+										<button type = "button" id = "opt-btn">
+											4
+										</button>
+										<h4 class = "option-text">WAIS</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+
+					<section id="final-section" class = "exit-section">
+						<center><div class = "exit-btn">
+							<h2 id = "exit" class = "btn-hover-effect" style="display: inline;" >Reiniciar</h2>
+							<a href="contenedor.html" class="botonSalir" ><b>Salir</b></a>
+						</div></center>
+					</section>
+				</div>
 			</article>
 
 
@@ -1085,5 +1154,6 @@
 		<script src="js/scriptControlGIF.js"></script>
     	<script src="js/questions.js"></script>
    		<script src="js/scriptQuestions.js"></script>
+   		<script src="js/scriptEvaluacion.js" async defer></script>
 </body>
 </html>

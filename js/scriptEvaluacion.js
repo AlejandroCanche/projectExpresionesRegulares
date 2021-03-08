@@ -210,7 +210,7 @@ quizQuestion.prototype.checkAnswer = function(userAns){
 // para actualizar la respuesta correcta
 function correctAnsUpdate(){
     document.getElementById('question').style.color = "green";
-    document.getElementById('question').innerHTML = "Correcto!";
+    document.getElementById('question').innerHTML = "¡Correcto!";
     SCORE++;
     scoreVal.innerHTML = SCORE;
     
@@ -220,7 +220,7 @@ function correctAnsUpdate(){
 // para actualización de respuesta incorrecta
 function incorrectAnsUpdate(){
     document.getElementById('question').style.color = "red";
-    document.getElementById('question').innerHTML = "Incorrecto!";
+    document.getElementById('question').innerHTML = "¡Incorrecto!";
 
     setTimeout(contdPlay, 1500);
 }

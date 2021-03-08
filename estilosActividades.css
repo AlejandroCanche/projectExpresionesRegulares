@@ -216,7 +216,7 @@ section .retro_alimentacion{
 
 section .option_list .option{
     background: aliceblue;
-    border: 1px solid #84c5fe;
+    border: 1px solid rgb(0,16,42,0.5);
     border-radius: 5px;
     padding: 4px 8px;
     font-size: 15px;

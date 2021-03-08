@@ -67,7 +67,7 @@ let questions = [
       "{ab}"
     ],
     retro: [
-      "R<b>Retroalimentación:</b>: La concatenación se obtiene escribiendo un elemento después del otro, dando lugar a una nueva palabra (en este caso).",
+      "<b>Retroalimentación:</b>: La concatenación se obtiene escribiendo un elemento después del otro, dando lugar a una nueva palabra (en este caso).",
     ]
   },
 
