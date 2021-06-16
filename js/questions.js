@@ -2,8 +2,8 @@
 let questions = [
     {
     numb: 1,
-    question: "¿Cuál de las siguientes palabras se puede formar concatenando elementos del alfabeto Σ = {a, b}?",
-    answer: "aa",
+    question: "¿Cuál de las siguientes palabras NO se puede formar concatenando elementos del alfabeto Σ = {a, b}?",
+    answer: "abc",
     options: [
       "aa",
       "a",

@@ -29,7 +29,7 @@
 .quiz_box,
 .result_box{
     position: absolute;
-    top: 48%;
+    top: center;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
@@ -82,11 +82,11 @@
 }
 
 .info_box .info-list{
-    padding: 15px 30px;
+    padding: 20px 30px 20px;
 }
 
 .info_box .info-list .info{
-    margin: 2px 0;
+    margin: 5px 0;
     font-size: 16px;
 }
 
